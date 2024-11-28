@@ -202,17 +202,44 @@ However, in 2020, Google collaborated with Skywater to open-source the 130nm PDK
 <br />
 
 <div align="center">
-  <img src="assets/ASICreq.png" alt="BASIC Requirements">
+  <img src="assets/ASICreq.png" alt="ASIC Requirements">
 </div>
+
+<br />
 
 <div align="center">
   <img src="assets/130old.png" alt="Is sky130 old?">
 </div>
 
+<br />
+
+<p align="justify"> 
+The 130nm process accounts for 6% of the market share in pure-play IC foundry sales. It remains relevant due to its cost-effectiveness for applications that don't require the advanced performance of smaller nodes.
+</p>
+
 <div align="center">
   <img src="assets/130fast.png" alt="Is sky130 fast?">
 </div>
 
+<br />
+
+<p align="justify"> 
+The 130nm process can still achieve high performance. For instance, Intel's Pentium 4 Extreme Edition ran at 3.46 GHz, and the OSU team achieved a 327 MHz clock frequency for a single-cycle RV32i CPU in post-layout simulations. A pipelined version can exceed 1 GHz. Additionally, using the Sky130 PDK, the RV32i design achieved a 398 MHz frequency with a 33.8 pJ PDP, demonstrating that 130nm can still deliver competitive speeds.
+</p>
+
 <div align="center">
   <img src="assets/EDAtools.png" alt="EDA Tools">
 </div>
+
+<br />
+
+<p align="justify"> 
+ASIC design is a complex process involving numerous steps, methodologies, and EDA tools. These elements are integrated into an ASIC flow, a software that combines various tools to execute the design process.
+</p>
+
+
+
+
+
+
+

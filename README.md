@@ -153,6 +153,7 @@ The instructions, which are part of the Instruction Set Architecture (ISA), are 
 <br />
 This course is divided into three distinct parts:
 <br />
+
 - RISC-V ISA
 - RTL and synthesis of RISC-V based CPU core - picorv32
 - Physical design implementation of picorv32

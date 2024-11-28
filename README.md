@@ -65,6 +65,26 @@ Below are the diagrams that visually represent the chip design workflow:
 </div>
 </details>
 
+# Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK (28/03/2024 - 29/03/2024)
 
+## SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and Ips
 
+### Overview of an Embedded Board Design
+<div align="center">
+  <img src="assets/EmbeddedBoardDesign.png" alt="Embedded Board Design">
+</div>
 
+### Inside a Package
+<div align="center">
+  <img src="assets/Package.png" alt="Package View">
+</div>
+
+### Connecting the chip to the pins 
+<div align="center">
+  <img src="assets/ChipToPin.png" alt="Chip to pins connections">
+</div>
+
+### Chip Overview
+<div align="center">
+  <img src="assets/ChipOverview.png" alt="Chip Overview">
+</div>

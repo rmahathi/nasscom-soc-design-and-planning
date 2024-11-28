@@ -102,7 +102,6 @@ For example, the PLL is a crucial IP block in chip design. Its primary function 
 By using foundry IPs, designers save time and effort, leveraging proven and reliable building blocks optimized for the foundry's process technology.
 
 </details>
-
 <details>
 <summary> 
 
@@ -115,3 +114,5 @@ By using foundry IPs, designers save time and effort, leveraging proven and reli
 </div>
 
 RISC-V Architecture specifications can be implemented in the Layout using a HDL.
+
+</details>

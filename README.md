@@ -69,6 +69,8 @@ Below are the diagrams that visually represent the chip design workflow:
 
 ## SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and Ips
 
+<details>
+
 ### Overview of an Embedded Board Design
 <div align="center">
   <img src="assets/EmbeddedBoardDesign.png" alt="Embedded Board Design">
@@ -89,6 +91,8 @@ Below are the diagrams that visually represent the chip design workflow:
   <img src="assets/ChipOverview.png" alt="Chip Overview">
 </div>
 
- --- 
+***
 
 Foundry IPs are pre-designed and pre-verified blocks provided by semiconductor foundries to assist in chip design. These include essential components like analog-to-digital converters (ADCs), digital-to-analog converters (DACs), PLLs (Phase-Locked Loops), SRAM blocks, and I/O interfaces such as GPIO and communication ports. They are optimized for the foundry's process technology, ensuring compatibility and performance. By using these IPs, designers can save time and effort, focusing on the custom logic of the System-on-Chip (SoC) while leveraging proven and reliable building blocks for critical functionalities.
+
+</details>

@@ -126,6 +126,7 @@ RISC-V Architecture specifications can be implemented in the Layout using a HDL.
 <div align="center">
   <img src="assets/swflow.png" alt="Software Flow">
 </div>
+<br />
 To run an application on hardware, several processes occur. The application enters the system software, which converts it into binary language. Key components of system software include the Operating System (OS), compiler, and assembler.
 <br>
 The OS produces functions in high-level languages (e.g., C, C++, Java), which the compiler converts into hardware-specific instructions. These instructions are then processed by the assembler, which translates them into binary code (machine language). Finally, this binary code is fed to the hardware, enabling it to execute the required functions.
@@ -148,8 +149,7 @@ The instructions, which are part of the Instruction Set Architecture (ISA), are 
 <div align="center">
   <img src="assets/breakdown.png" alt="Breakdown">
 </div>
-
-Course Breakdown :
+There are 3 different parts in this course:
 - RISC-V ISA
 - RTL and synthesis of RISC-V based CPU core - picorv32
 - Physical design implementation of picorv32

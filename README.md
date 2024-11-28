@@ -65,7 +65,6 @@ Below are the diagrams that visually represent the chip design workflow:
 </div>
 </details>
 
-# Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK (28/03/2024 - 29/03/2024)
 
 
 

@@ -204,3 +204,15 @@ However, in 2020, Google collaborated with Skywater to open-source the 130nm PDK
 <div align="center">
   <img src="assets/ASICreq.png" alt="BASIC Requirements">
 </div>
+
+<div align="center">
+  <img src="assets/130old.png" alt="Is sky130 old?">
+</div>
+
+<div align="center">
+  <img src="assets/130fast.png" alt="Is sky130 fast?">
+</div>
+
+<div align="center">
+  <img src="assets/EDAtools.png" alt="EDA Tools">
+</div>

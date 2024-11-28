@@ -102,6 +102,7 @@ For example, the PLL is a crucial IP block in chip design. Its primary function 
 By using foundry IPs, designers save time and effort, leveraging proven and reliable building blocks optimized for the foundry's process technology.
 
 </details>
+---
 <details>
 <summary> 
 
@@ -116,6 +117,7 @@ By using foundry IPs, designers save time and effort, leveraging proven and reli
 RISC-V Architecture specifications can be implemented in the Layout using a HDL.
 
 </details>
+---
 <details>
 <summary> 
 
@@ -160,3 +162,21 @@ This course is divided into three distinct parts:
 - Physical design implementation of picorv32
 
 </details>
+---
+<details>
+<summary> 
+
+## Introduction to all components of open-source digital asic design
+</summary>
+
+For open-source ASIC design implementation, we need the following enablers available in open-source versions:
+<br /><br />
+- RTL Designs
+- EDA Tools
+- PDK Data
+<br /><br />
+Initially, IC design and fabrication were closely tied and limited to companies like TI and Intel. In 1979, Lynn Conway and Carver Mead introduced the idea of separating design from fabrication by developing structured methodologies based on λ-design rules, which led to the first VLSI book, *Introduction to VLSI Systems*. This approach gave rise to "fabless" companies focused on design and "pure play fabs" for fabrication.
+<br /><br />
+The interface between designers and fabs became a set of files called "Process Design Kits" (PDKs), which include device models, design rules, and libraries. Due to the sensitive nature of PDKs, they were previously distributed only under NDAs.
+<br /><br />
+However, in 2020, Google collaborated with Skywater to open-source the 130nm PDK, making it the first open-source PDK release.

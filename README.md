@@ -66,6 +66,7 @@ Below are the diagrams that visually represent the chip design workflow:
   <img src="assets/Chipdesign2.jpg" alt="Chip Design Validation and Applications - O4">
 </div>
 </details>
+</p>
 
 # Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK (28/03/2024 - 29/03/2024)
 
@@ -96,13 +97,13 @@ Below are the diagrams that visually represent the chip design workflow:
 </div>
 
 <br />
-
+<p align="justify"> 
 Foundry IPs are pre-designed and pre-verified blocks provided by semiconductor foundries to streamline chip design. These include critical components such as analog-to-digital converters (ADCs), digital-to-analog converters (DACs), SRAM, GPIO interfaces, and Phase-Locked Loops (PLLs).
 
 For example, the PLL is a crucial IP block in chip design. Its primary function is to take an input clock signal (which may be of lower frequency) and generate a stable output clock signal at a higher frequency, phase-locked to the input. This is essential for processors to operate at their required high-frequency clock rates while maintaining synchronization with the input clock source.
 
 By using foundry IPs, designers save time and effort, leveraging proven and reliable building blocks optimized for the foundry's process technology.
-
+</p>
 </details>
 
 ---
@@ -135,24 +136,30 @@ RISC-V Architecture specifications can be implemented in the Layout using a HDL.
   <img src="assets/swflow.png" alt="Software Flow">
 </div>
 <br />
+<p align="justify"> 
 To run an application on hardware, several processes occur. The application enters the system software, which converts it into binary language. Key components of system software include the Operating System (OS), compiler, and assembler.  
 <br />
 <br />
 The OS produces functions in high-level languages (e.g., C, C++, Java), which the compiler converts into hardware-specific instructions. These instructions are then processed by the assembler, which translates them into binary code (machine language). Finally, this binary code is fed to the hardware, enabling it to execute the required functions.
+</p>
 
 ### Stopwatch App as an example
 <div align="center">
   <img src="assets/stopwatchex.png" alt="Stopwatch App">
 </div>
 <br />
+<p align="justify"> 
 For instance, consider a stopwatch app running on a RISC-V core. The operating system generates a small C function, which is processed by the compiler to produce RISC-V instructions. These instructions are then passed through an assembler, which converts them into binary code. This binary code is subsequently loaded onto the chip's layout for execution.
+</p>
 
 ### Instruction Set Architecture (ISA)
 <div align="center">
   <img src="assets/isa.png" alt="ISA">
 </div>
 <br />
+<p align="justify"> 
 The instructions, which are part of the Instruction Set Architecture (ISA), are written in assembly language or high-level language. These are passed through an assembler (or compiler), which converts them into machine code (binary format) that the hardware can understand and execute. The RTL (Register Transfer Level) description, written in a hardware description language (e.g., Verilog or VHDL), is synthesized into a netlist (a representation of the design in terms of logic gates). This netlist is then used in the physical design process to create a layout, which represents the actual physical implementation of the circuit on silicon.
+</p>
 
 ### ISA -> RTL & Synthesis -> Physical Design
 <div align="center">
@@ -176,7 +183,7 @@ This course is divided into three distinct parts:
 
 ## Introduction to all components of open-source digital asic design
 </summary>
-
+<p align="justify"> 
 For open-source ASIC design implementation, we need the following enablers available in open-source versions:
 <br />
 - RTL Designs
@@ -188,5 +195,4 @@ Initially, IC design and fabrication were closely tied and limited to companies 
 The interface between designers and fabs became a set of files called "Process Design Kits" (PDKs), which include device models, design rules, and libraries. Due to the sensitive nature of PDKs, they were previously distributed only under NDAs.
 <br /><br />
 However, in 2020, Google collaborated with Skywater to open-source the 130nm PDK, making it the first open-source PDK release.
-
 </p>

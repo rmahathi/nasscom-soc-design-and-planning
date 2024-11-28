@@ -116,3 +116,32 @@ By using foundry IPs, designers save time and effort, leveraging proven and reli
 RISC-V Architecture specifications can be implemented in the Layout using a HDL.
 
 </details>
+<details>
+<summary> 
+
+## SKY_L3 - From Software Applications to Hardware
+</summary>
+
+### Software Flow
+<div align="center">
+  <img src="assets/swflow.png" alt="Software Flow">
+</div>
+
+### Stopwatch App as an example
+<div align="center">
+  <img src="assets/stopwatchex.png" alt="Stopwatch App">
+</div>
+
+### Instruction Set Architecture (ISA)
+<div align="center">
+  <img src="assets/isa.png" alt="ISA">
+</div>
+<br>
+The instructions, which are part of the Instruction Set Architecture (ISA), are written in assembly language or high-level language. These are passed through an assembler (or compiler), which converts them into machine code (binary format) that the hardware can understand and execute. The RTL (Register Transfer Level) description, written in a hardware description language (e.g., Verilog or VHDL), is synthesized into a netlist (a representation of the design in terms of logic gates). This netlist is then used in the physical design process to create a layout, which represents the actual physical implementation of the circuit on silicon.
+
+### ISA --> RTL & Synthesis --> Physical Design
+<div align="center">
+  <img src="assets/breakdown.png" alt="Breakdown">
+</div>
+
+</details>

@@ -198,3 +198,9 @@ The interface between designers and fabs became a set of files called "Process D
 <br /><br />
 However, in 2020, Google collaborated with Skywater to open-source the 130nm PDK, making it the first open-source PDK release.
 </p>
+
+<br />
+
+<div align="center">
+  <img src="assets/ASICreq.png" alt="BASIC Requirements">
+</div>

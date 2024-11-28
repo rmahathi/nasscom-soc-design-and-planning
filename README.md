@@ -119,6 +119,7 @@ By using foundry IPs, designers save time and effort, leveraging proven and reli
   <img src="assets/riscv.png" alt="RISC-V">
 </div>
 <p align="justify"> 
+<br />
 RISC-V Architecture specifications can be implemented in the Layout using a HDL.
 </p>
 </details>
@@ -168,7 +169,6 @@ The instructions, which are part of the Instruction Set Architecture (ISA), are 
 <br />
 <p align="justify"> 
 This course is divided into three distinct parts:
-<br />
 <br />
 
 - RISC-V ISA

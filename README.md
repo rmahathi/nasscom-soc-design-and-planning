@@ -95,6 +95,10 @@ Below are the diagrams that visually represent the chip design workflow:
 
 <br>
 
-Foundry IPs are pre-designed and pre-verified blocks provided by semiconductor foundries to assist in chip design. These include essential components like analog-to-digital converters (ADCs), digital-to-analog converters (DACs), PLLs (Phase-Locked Loops), SRAM blocks, and I/O interfaces such as GPIO and communication ports. They are optimized for the foundry's process technology, ensuring compatibility and performance. By using these IPs, designers can save time and effort, focusing on the custom logic of the System-on-Chip (SoC) while leveraging proven and reliable building blocks for critical functionalities.
+Foundry IPs are pre-designed and pre-verified blocks provided by semiconductor foundries to streamline chip design. These include critical components such as analog-to-digital converters (ADCs), digital-to-analog converters (DACs), SRAM, GPIO interfaces, and Phase-Locked Loops (PLLs).
+
+For example, the PLL is a crucial IP block in chip design. Its primary function is to take an input clock signal (which may be of lower frequency) and generate a stable output clock signal at a higher frequency, phase-locked to the input. This is essential for processors to operate at their required high-frequency clock rates while maintaining synchronization with the input clock source.
+
+By using foundry IPs, designers save time and effort, leveraging proven and reliable building blocks optimized for the foundry's process technology.
 
 </details>

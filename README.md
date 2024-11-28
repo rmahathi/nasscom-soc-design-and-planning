@@ -151,7 +151,7 @@ The instructions, which are part of the Instruction Set Architecture (ISA), are 
   <img src="assets/breakdown.png" alt="Breakdown">
 </div>
 <br />
-There are 3 different parts in this course:
+This course is divided into three distinct parts:
 
 - RISC-V ISA
 - RTL and synthesis of RISC-V based CPU core - picorv32

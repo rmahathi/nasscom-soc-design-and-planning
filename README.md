@@ -102,7 +102,9 @@ For example, the PLL is a crucial IP block in chip design. Its primary function 
 By using foundry IPs, designers save time and effort, leveraging proven and reliable building blocks optimized for the foundry's process technology.
 
 </details>
+
 ---
+
 <details>
 <summary> 
 
@@ -117,7 +119,9 @@ By using foundry IPs, designers save time and effort, leveraging proven and reli
 RISC-V Architecture specifications can be implemented in the Layout using a HDL.
 
 </details>
+
 ---
+
 <details>
 <summary> 
 
@@ -162,7 +166,9 @@ This course is divided into three distinct parts:
 - Physical design implementation of picorv32
 
 </details>
+
 ---
+
 <details>
 <summary> 
 
@@ -170,7 +176,7 @@ This course is divided into three distinct parts:
 </summary>
 
 For open-source ASIC design implementation, we need the following enablers available in open-source versions:
-<br /><br />
+<br />
 - RTL Designs
 - EDA Tools
 - PDK Data

@@ -93,7 +93,7 @@ Below are the diagrams that visually represent the chip design workflow:
   <img src="assets/ChipOverview.png" alt="Chip Overview">
 </div>
 
-<br>
+<br />
 
 Foundry IPs are pre-designed and pre-verified blocks provided by semiconductor foundries to streamline chip design. These include critical components such as analog-to-digital converters (ADCs), digital-to-analog converters (DACs), SRAM, GPIO interfaces, and Phase-Locked Loops (PLLs).
 
@@ -128,21 +128,21 @@ RISC-V Architecture specifications can be implemented in the Layout using a HDL.
 </div>
 <br />
 To run an application on hardware, several processes occur. The application enters the system software, which converts it into binary language. Key components of system software include the Operating System (OS), compiler, and assembler.
-<br>
+<br />
 The OS produces functions in high-level languages (e.g., C, C++, Java), which the compiler converts into hardware-specific instructions. These instructions are then processed by the assembler, which translates them into binary code (machine language). Finally, this binary code is fed to the hardware, enabling it to execute the required functions.
 
 ### Stopwatch App as an example
 <div align="center">
   <img src="assets/stopwatchex.png" alt="Stopwatch App">
 </div>
-<br>
+<br />
 For instance, consider a stopwatch app running on a RISC-V core. The operating system generates a small C function, which is processed by the compiler to produce RISC-V instructions. These instructions are then passed through an assembler, which converts them into binary code. This binary code is subsequently loaded onto the chip's layout for execution.
 
 ### Instruction Set Architecture (ISA)
 <div align="center">
   <img src="assets/isa.png" alt="ISA">
 </div>
-<br>
+<br />
 The instructions, which are part of the Instruction Set Architecture (ISA), are written in assembly language or high-level language. These are passed through an assembler (or compiler), which converts them into machine code (binary format) that the hardware can understand and execute. The RTL (Register Transfer Level) description, written in a hardware description language (e.g., Verilog or VHDL), is synthesized into a netlist (a representation of the design in terms of logic gates). This netlist is then used in the physical design process to create a layout, which represents the actual physical implementation of the circuit on silicon.
 
 ### ISA -> RTL & Synthesis -> Physical Design

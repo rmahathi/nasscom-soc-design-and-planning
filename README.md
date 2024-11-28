@@ -110,7 +110,7 @@ By using foundry IPs, designers save time and effort, leveraging proven and reli
 
 ### RISC-V Architecture Implementation
 <div align="center">
-  <img src="assets/risv.png" alt="RISC-V">
+  <img src="assets/riscv.png" alt="RISC-V">
 </div>
 
 RISC-V Architecture specifications can be implemented in the Layout using a HDL.

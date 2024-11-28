@@ -118,9 +118,9 @@ By using foundry IPs, designers save time and effort, leveraging proven and reli
 <div align="center">
   <img src="assets/riscv.png" alt="RISC-V">
 </div>
-
+<p align="justify"> 
 RISC-V Architecture specifications can be implemented in the Layout using a HDL.
-
+</p>
 </details>
 
 ---
@@ -166,6 +166,7 @@ The instructions, which are part of the Instruction Set Architecture (ISA), are 
   <img src="assets/breakdown.png" alt="Breakdown">
 </div>
 <br />
+<p align="justify"> 
 This course is divided into three distinct parts:
 <br />
 <br />
@@ -173,7 +174,7 @@ This course is divided into three distinct parts:
 - RISC-V ISA
 - RTL and synthesis of RISC-V based CPU core - picorv32
 - Physical design implementation of picorv32
-
+</p>
 </details>
 
 ---
@@ -186,6 +187,7 @@ This course is divided into three distinct parts:
 <p align="justify"> 
 For open-source ASIC design implementation, we need the following enablers available in open-source versions:
 <br />
+
 - RTL Designs
 - EDA Tools
 - PDK Data

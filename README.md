@@ -8,6 +8,8 @@
 ![Alt text](assets/Cover.png)
 > 2 Week digital VLSI SoC design and planning workshop with complete RTL2GDSII flow organised by VSD in collaboration with NASSCOM
 
+<p align="justify"> 
+
 # Chip Design and Validation Workflow
 
 An overview of the **chip design and validation workflow** from initial specifications to final applications. The workflow ensures validation consistency across all stages: **O1 = O2 = O3 = O4**.
@@ -186,3 +188,5 @@ Initially, IC design and fabrication were closely tied and limited to companies 
 The interface between designers and fabs became a set of files called "Process Design Kits" (PDKs), which include device models, design rules, and libraries. Due to the sensitive nature of PDKs, they were previously distributed only under NDAs.
 <br /><br />
 However, in 2020, Google collaborated with Skywater to open-source the 130nm PDK, making it the first open-source PDK release.
+
+</p>

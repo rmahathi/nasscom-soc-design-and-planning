@@ -70,7 +70,7 @@ Below are the diagrams that visually represent the chip design workflow:
 <details>
 <summary> 
 
-## SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and Ips 
+## Introduction to QFN-48 Package, chip, pads, core, die and Ips 
 </summary>
 
 ### Overview of an Embedded Board Design
@@ -105,7 +105,7 @@ By using foundry IPs, designers save time and effort, leveraging proven and reli
 <details>
 <summary> 
 
-## SKY_L2 - Introduction to RISC-V
+## Introduction to RISC-V
 </summary>
 
 ### RISC-V Architecture Implementation
@@ -119,7 +119,7 @@ RISC-V Architecture specifications can be implemented in the Layout using a HDL.
 <details>
 <summary> 
 
-## SKY_L3 - From Software Applications to Hardware
+## From Software Applications to Hardware
 </summary>
 
 ### Software Flow

@@ -191,7 +191,9 @@ For open-source ASIC design implementation, we need the following enablers avail
 - RTL Designs
 - EDA Tools
 - PDK Data
+</p>
 <br /><br />
+<p align="justify"> 
 Initially, IC design and fabrication were closely tied and limited to companies like TI and Intel. In 1979, Lynn Conway and Carver Mead introduced the idea of separating design from fabrication by developing structured methodologies based on λ-design rules, which led to the first VLSI book, *Introduction to VLSI Systems*. This approach gave rise to "fabless" companies focused on design and "pure play fabs" for fabrication.
 <br /><br />
 The interface between designers and fabs became a set of files called "Process Design Kits" (PDKs), which include device models, design rules, and libraries. Due to the sensitive nature of PDKs, they were previously distributed only under NDAs.
@@ -240,9 +242,9 @@ The 130nm process can still achieve high performance. For instance, Intel's Pent
 ASIC design is a complex process involving numerous steps, methodologies, and EDA tools. These elements are integrated into an ASIC flow, a software that combines various tools to execute the design process.
 </p>
 
+<details>
+<summary> 
 
-
-
-
-
-
+## Simplified RTL2GDS flow
+</summary>
+<p align="justify"> 

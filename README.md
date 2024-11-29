@@ -283,7 +283,6 @@ ASIC design is a complex process involving numerous steps, methodologies, and ED
 </div>
 <br />
 
-### Placement2
 <div align="center">
   <img src="assets/Placement2.png" alt="Placement2">
 </div>

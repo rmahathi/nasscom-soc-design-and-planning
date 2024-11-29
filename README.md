@@ -249,4 +249,59 @@ ASIC design is a complex process involving numerous steps, methodologies, and ED
 
 ## Simplified RTL2GDS flow
 </summary>
-<p align="justify"> 
+
+### RTL2GDS flow
+<div align="center">
+  <img src="assets/RTL2GDSIIflow.png" alt="RTL2GDSII flow">
+</div>
+<br />
+
+### Chip Floor Planning
+<div align="center">
+  <img src="assets/ChipFloorPlanning.png" alt="Chip Floor Planning">
+</div>
+<br />
+
+### Macro Floor Planning
+<div align="center">
+  <img src="assets/MacroFloorPlanning.png" alt="Macro Floor Planning">
+</div>
+<br />
+
+### Power Planning
+<div align="center">
+  <img src="assets/PowerPlanning.png" alt="Power Planning">
+</div>
+<br />
+
+### Placement
+<div align="center">
+  <img src="assets/Placement.png" alt="Placement">
+</div>
+<br />
+
+### Placement2
+<div align="center">
+  <img src="assets/Placement2.png" alt="Placement2">
+</div>
+<br />
+
+### Clock Tree Synthesis
+<div align="center">
+  <img src="assets/ClockTreeSynthesis.png" alt="Clock Tree Synthesis">
+</div>
+<br />
+
+### Routing
+<div align="center">
+  <img src="assets/Routing.png" alt="Routing">
+</div>
+<br />
+
+### SignOff
+<div align="center">
+  <img src="assets/SignOff.png" alt="SignOff">
+</div>
+<br />
+
+---

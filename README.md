@@ -243,6 +243,7 @@ The 130nm process can still achieve high performance. For instance, Intel's Pent
 <p align="justify"> 
 ASIC design is a complex process involving numerous steps, methodologies, and EDA tools. These elements are integrated into an ASIC flow, a software that combines various tools to execute the design process.
 </p>
+</details>
 
 <details>
 <summary> 
@@ -303,5 +304,7 @@ ASIC design is a complex process involving numerous steps, methodologies, and ED
   <img src="assets/SignOff.png" alt="SignOff">
 </div>
 <br />
+
+</details>
 
 ---

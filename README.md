@@ -245,6 +245,8 @@ ASIC design is a complex process involving numerous steps, methodologies, and ED
 </p>
 </details>
 
+---
+
 <details>
 <summary> 
 

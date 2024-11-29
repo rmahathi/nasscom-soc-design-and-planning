@@ -16,7 +16,7 @@ An overview of the **chip design and validation workflow** from initial specific
 
 <details><summary> 
   
-### Click to learn about the workflow stages </summary>
+#### Click to learn about the workflow stages </summary>
 
 ## **Workflow Stages**
 

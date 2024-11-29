@@ -192,7 +192,7 @@ For open-source ASIC design implementation, we need the following enablers avail
 - EDA Tools
 - PDK Data
 </p>
-<br /><br />
+
 <p align="justify"> 
 Initially, IC design and fabrication were closely tied and limited to companies like TI and Intel. In 1979, Lynn Conway and Carver Mead introduced the idea of separating design from fabrication by developing structured methodologies based on λ-design rules, which led to the first VLSI book, *Introduction to VLSI Systems*. This approach gave rise to "fabless" companies focused on design and "pure play fabs" for fabrication.
 <br /><br />

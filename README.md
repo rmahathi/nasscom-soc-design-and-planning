@@ -12,7 +12,9 @@
 
 # Chip Design and Validation Workflow
 
-An overview of the **chip design and validation workflow** from initial specifications to final applications. The workflow ensures validation consistency across all stages: **O1 = O2 = O3 = O4**.  <details><summary> 
+An overview of the **chip design and validation workflow** from initial specifications to final applications. The workflow ensures validation consistency across all stages: **O1 = O2 = O3 = O4**.  
+
+<details><summary> 
   
 ### Click to learn about the workflow stages </summary>
 

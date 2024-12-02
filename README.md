@@ -70,7 +70,7 @@ Below are the diagrams that visually represent the chip design workflow:
 </details>
 </p>
 
-# Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK (28/03/2024 - 29/03/2024)
+# Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK 
 
 <details>
 <summary> 
@@ -422,5 +422,7 @@ All picorv32a logs, reports and results can be found here:
 
 </p>
 </details>
+<br />
 
----
+# Section 2 - Good floorplan vs bad floorplan and introduction to library cells
+

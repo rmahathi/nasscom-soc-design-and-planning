@@ -309,3 +309,105 @@ ASIC design is a complex process involving numerous steps, methodologies, and ED
 </details>
 
 ---
+
+<details>
+<summary> 
+
+## Design Synthesis - picorv32a 
+</summary>
+<p align="justify"> 
+
+Aim is to run 'picorv32a' design synthesis using OpenLANE flow and generate necessary outputs and then calculate the flop ratio.
+
+### To run Design Synthesis - picorv32a using OpenLANE flow
+
+Commands to invoke the OpenLANE flow and perform synthesis
+
+```bash
+# Navigate to the OpenLANE flow directory
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Use the alias 'docker' for the long Docker run command
+# This alias simplifies invoking the OpenLANE Docker container
+docker
+
+```
+```tcl
+# Launch the OpenLANE flow in interactive mode
+./flow.tcl -interactive
+
+# Load the OpenLANE package for proper functionality
+package require openlane 0.9
+
+# Prepare the design environment for 'picorv32a' by creating necessary files and directories
+prep -design picorv32a
+
+# Run synthesis for the prepared design
+run_synthesis
+
+# Exit the OpenLANE flow interface
+exit
+
+# Exit the Docker container
+exit
+
+```
+
+Terminal screenshots:
+
+<div align="center">
+  <img src="assets/one.png" alt="Screenshot of running command">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/two.png" alt="Screenshot of running command">
+</div>
+<br />
+
+### To Calculate Flip Flop Ratio
+
+```math
+Flop\ Ratio = \frac{Number\ of\ D\ Flip\ Flops}{Total\ Number\ of\ Cells}
+```
+```math
+Percentage\ of\ DFF's = Flop\ Ratio * 100
+```
+Terminal screenshots:
+
+<div align="center">
+  <img src="assets/three.png" alt="Screenshot of running command">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/four.png" alt="Screenshot of running command">
+</div>
+<br />
+
+Highlighted Values for computation:
+
+<div align="center">
+  <img src="assets/five.png" alt="Screenshot of running command">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/six.png" alt="Screenshot of running command">
+</div>
+<br />
+
+Calculation of Flop Ratio and DFF % from synthesis statistics report file
+
+```math
+Flop\ Ratio = \frac{1613}{14876} = 0.108429685
+```
+```math
+Percentage\ of\ DFF's = 0.108429685 * 100 = 10.84296854\ \%
+```
+
+* All picorv32a logs, reports and results can be found here:
+
+[Section 1 Run - 02-12_18-45](https://github.com/rmahathi/nasscom-soc-design-and-planning/tree/main/02-12_18-45)
+
+</p>

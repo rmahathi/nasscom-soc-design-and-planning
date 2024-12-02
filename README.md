@@ -353,7 +353,7 @@ exit
 
 ```
 
-Terminal screenshots:
+#### Terminal screenshots:
 
 <div align="center">
   <img src="assets/one.png" alt="Screenshot of running command">
@@ -370,10 +370,14 @@ Terminal screenshots:
 ```math
 Flop\ Ratio = \frac{Number\ of\ D\ Flip\ Flops}{Total\ Number\ of\ Cells}
 ```
+<br />
+
 ```math
 Percentage\ of\ DFF's = Flop\ Ratio * 100
 ```
-Terminal screenshots:
+<br />
+
+#### Terminal screenshots:
 
 <div align="center">
   <img src="assets/three.png" alt="Screenshot of running command">
@@ -385,7 +389,7 @@ Terminal screenshots:
 </div>
 <br />
 
-Highlighted Values for computation:
+#### Highlighted Values for computation:
 
 <div align="center">
   <img src="assets/five.png" alt="Screenshot of running command">
@@ -397,16 +401,20 @@ Highlighted Values for computation:
 </div>
 <br />
 
-Calculation of Flop Ratio and DFF % from synthesis statistics report file
+Calculation of Flop Ratio and DFF % from synthesis statistics report file:
+<br />
 
 ```math
 Flop\ Ratio = \frac{1613}{14876} = 0.108429685
 ```
+<br />
+
 ```math
 Percentage\ of\ DFF's = 0.108429685 * 100 = 10.84296854\ \%
 ```
+<br />
 
-* All picorv32a logs, reports and results can be found here:
+All picorv32a logs, reports and results can be found here:
 
 [Section 1 Run - 02-12_18-45](https://github.com/rmahathi/nasscom-soc-design-and-planning/tree/main/02-12_18-45)
 

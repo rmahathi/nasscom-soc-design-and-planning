@@ -421,3 +421,6 @@ All picorv32a logs, reports and results can be found here:
 [Section 1 Run - 02-12_18-45](https://github.com/rmahathi/nasscom-soc-design-and-planning/tree/main/02-12_18-45)
 
 </p>
+</details>
+
+---

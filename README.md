@@ -426,3 +426,115 @@ All picorv32a logs, reports and results can be found here:
 
 # Section 2 - Good floorplan vs bad floorplan and introduction to library cells
 
+<details>
+<summary> 
+
+## Chip Floor Planning Considerations
+</summary>
+
+<p align="justify"> 
+To determine the Utilization Factor and Aspect Ratio, the height and width of core and die areas must first be defined.
+<br />
+Core is the area in a chip used for placing all the logic cells and components. It is where the logic resides in a chip.
+<br />
+Die is the area encircling the core, used for placing I/O-related components.  
+
+</p>
+
+### Ulitization Factor and Aspect Ratio
+<div align="center">
+  <img src="assets/diecore.png" alt="diecore">
+</div>
+<br />
+
+</details>
+
+
+The height and width of the core area depend on the design's netlist. These are based on the number of components required to execute the logic. The die area's height and width depend on the core's dimensions.  
+
+---
+
+For example, consider a netlist with two logic gates and two flip-flops, each with an area of 1 sq. unit. The total core area required is 4 sq. units.  
+
+---
+
+**Utilization Factor**  
+Utilization Factor is the ratio of the core area occupied by the netlist to the total core area.  
+For a good FloorPlan, the Utilization Factor should never be '1' to allow space for additional logic.  
+
+Utilization Factor = (Area occupied by netlist / Total core area)  
+
+---
+
+**Aspect Ratio**  
+Aspect Ratio is the ratio of the core's height to its width.  
+If the Aspect Ratio is '1', the core is square. Otherwise, it is rectangular.  
+
+Aspect Ratio = (Height of the core / Width of the core)  
+
+---
+
+**Example Calculations**  
+
+Case 1:  
+Utilization Factor = (4 sq. units) / (4 sq. units) = 1  
+Aspect Ratio = (2 units) / (2 units) = 1 (Square core)  
+
+---
+
+Case 2:  
+Utilization Factor = (4 sq. units) / (8 sq. units) = 0.5  
+Aspect Ratio = (2 units) / (4 units) = 0.5 (Rectangular core)  
+
+---
+
+Case 3:  
+Utilization Factor = (4 sq. units) / (16 sq. units) = 0.25  
+Aspect Ratio = (4 units) / (4 units) = 1 (Square core)  
+
+---
+
+**Concept of Pre-Placed Cells**  
+Pre-placing cells refers to reusing pre-designed blocks (e.g., memory, comparators, MUX). These blocks are called macros or IPs.  
+
+Macros should be placed close to input pins for reduced wiring length.  
+They are placed during the Floorplan stage, with placement blockages defined to prevent standard cells from being placed nearby.  
+Using pre-placed cells reduces Time-to-Market.  
+
+---
+
+**De-Coupling Capacitors**  
+Pre-placed blocks often drain high power. Voltage drops in interconnecting wires may cause insufficient power for switching.  
+
+De-coupling capacitors (De-cap cells) are placed near high-power blocks.  
+De-cap cells charge when not switching and supply power during switching.  
+This ensures stable power delivery for high-power blocks.  
+
+---
+
+**Power Planning**  
+De-cap cells have limitations like leakage power and increased chip area.  
+Power Planning uses separate meshes for Vdd and Ground to avoid:  
+1. **Voltage Drop**: Power shortage when multiple cells switch simultaneously from 0 to 1.  
+2. **Ground Bounce**: Voltage rise when multiple cells switch from 1 to 0.  
+
+---
+
+Top metal layers create Vdd and Ground meshes to minimize voltage drop.  
+These meshes spread across the design, providing local power and ground sources.  
+
+---
+
+**Pin Placement and Logical Cell Placement Blockage**  
+Pin placement impacts wire length and connectivity. Pins must be placed to minimize wire length.  
+For example, an input pin driving two blocks should be near them.  
+
+---
+
+In effective pin placement:  
+1. Pin order is based on connectivity, not sequence.  
+2. Clock pins are larger due to their importance and susceptibility to delays.  
+
+Placement blockages outside the core and inside the die prevent other cells from occupying the pin-dedicated area.  
+
+---

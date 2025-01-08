@@ -432,7 +432,10 @@ All picorv32a logs, reports and results can be found here:
 ## Chip Floor Planning Considerations
 </summary>
 
+### Ulitization Factor and Aspect Ratio
+
 <p align="justify"> 
+
 To determine the Utilization Factor and Aspect Ratio, the height and width of core and die areas must first be defined.
 
 Core is the area in a chip used for placing all the logic cells and components. It is where the logic resides in a chip.
@@ -441,7 +444,6 @@ Die is the area encircling the core, used for placing I/O-related components.
 
 </p>
 
-### Ulitization Factor and Aspect Ratio
 <div align="center">
   <img src="assets/diecore.png" alt="diecore">
 </div>

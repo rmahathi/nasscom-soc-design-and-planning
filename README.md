@@ -319,7 +319,7 @@ ASIC design is a complex process involving numerous steps, methodologies, and ED
 
 Aim is to run 'picorv32a' design synthesis using OpenLANE flow and generate necessary outputs and then calculate the flop ratio.
 
-### To run Design Synthesis - picorv32a using OpenLANE flow
+### DAY 1 LAB - To run Design Synthesis - picorv32a using OpenLANE flow
 
 Commands to invoke the OpenLANE flow and perform synthesis
 
@@ -556,6 +556,7 @@ Decoupling capacitors mitigate this by supplying the required energy locally dur
 
 In power planning for SoC design, consider a macro where a 16-bit orange bus carries a 0-to-1 signal. Being far from the power source introduces voltage drops due to resistance and inductance in the supply wires.
 
+
 <div align="center">
   <img src="assets/pow.png" alt="power_planning">
 </div>
@@ -568,9 +569,13 @@ To handle signal transitions, drivers (e.g., inverters) are employed. An inverte
 </div>
 <br />
 
+<p align="justify"> 
+
 1-to-0 Transition - Ground Bounce:
 
 In a 1-to-0 transition, the previously charged nodes discharge rapidly to ground. If all 16 bits discharge at once, the ground potential may fluctuate, causing a phenomenon called ground bounce. This occurs due to inductance in the ground path, leading to temporary voltage spikes. If the ground bounce crosses the noise margin, it can cause unpredictable behavior, further increasing the risk of errors in circuit operation.
+
+</p>
 
 <div align="center">
   <img src="assets/pow2.png" alt="power_planning">
@@ -579,24 +584,36 @@ In a 1-to-0 transition, the previously charged nodes discharge rapidly to ground
 
 0-to-1 Transition - Voltage Drop:
 
+<p align="justify"> 
+
 When a 0-to-1 transition occurs, the driver charges the load capacitance of the connected circuit. This charging demands significant current, especially for all 16 bits transitioning simultaneously. A voltage drop across the supply wires may occur due to the high current demand, reducing Vdd' and risking a voltage level near or below the noise margin. If the voltage drops significantly, the circuit can enter an undefined state, leading to unreliable outputs.
+
+</p>
 
 <div align="center">
   <img src="assets/pow4.png" alt="power_planning">
 </div>
 <br />
 
+<p align="justify"> 
+
 Simultaneous Switching Problem:
 
 When multiple signals (0-to-1 or 1-to-0) switch at the same time, the cumulative current demand rises sharply. For a 0-to-1 transition, the power supply must provide a surge of current to charge the capacitors, while for a 1-to-0 transition, a large discharge current flows to ground. Both cases can result in severe voltage drops or ground bounce due to the limitations of a single-point power supply.
+
+</p>
 
 <div align="center">
   <img src="assets/pow5.png" alt="power_planning">
 </div>
 <br />
 
+<p align="justify"> 
+
 Solution: Power Mesh
 The solution is to replace the single-point power supply with a power mesh. A power mesh distributes Vdd and ground throughout the chip using a network of interconnected wires, reducing the resistance and inductance between the source and various blocks. By bringing power closer to the loads and reducing the effective distance, the voltage drop and ground bounce are minimized. The power mesh ensures that all parts of the circuit can access stable supply and ground levels, even during peak current demands, maintaining signal integrity and preventing undefined states.
+
+</p>
 
 <div align="center">
   <img src="assets/pow6.png" alt="power_planning">
@@ -613,9 +630,13 @@ For example, an input pin driving two blocks should be near them.
 </div>
 <br />
 
+<p align="justify"> 
+
 In effective pin placement:  
 1. Pin order is based on connectivity, not sequence.  
-2. Clock pins are larger due to their importance and susceptibility to delays.  
+2. Clock pins are larger due to their importance and susceptibility to delays. Voltage drops in the clock signal leads to failure of the chip, which is why we use higher metal layers for routing the clock in the design.
+
+</p>
 
 <div align="center">
   <img src="assets/pls2.png" alt="pin_placement">
@@ -632,3 +653,11 @@ Placement blockages outside the core and inside the die prevents automated place
 <br />
 
 </details>
+
+### DAY 2 LAB - To run Design Floorplan - picorv32a using OpenLANE flow
+
+<p align="justify"> 
+
+Before initiating the floorplan stage, designers must verify and adjust crucial switches that control the floorplan's characteristics. These configuration parameters, including utilization factor and aspect ratio, must align with the project's specific requirements to ensure optimal floorplan execution. A proper review of these switches helps prevent potential issues and ensures the floorplan process proceeds as intended.
+
+</p>

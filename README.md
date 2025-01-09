@@ -636,6 +636,8 @@ Placement blockages outside the core and inside the die prevents automated place
 <details>
 <summary> 
 
+---
+
 ## DAY 2 LAB -  Design Floorplan- picorv32a 
 
 </summary>

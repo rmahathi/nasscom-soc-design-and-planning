@@ -603,4 +603,32 @@ The solution is to replace the single-point power supply with a power mesh. A po
 </div>
 <br />
 
-### 5. Pin Placement
+### 5. Pin Placement 
+
+Pin placement impacts wire length and connectivity. Pins must be placed to minimize wire length.  
+For example, an input pin driving two blocks should be near them.  
+
+<div align="center">
+  <img src="assets/pls1.png" alt="pin_placement">
+</div>
+<br />
+
+In effective pin placement:  
+1. Pin order is based on connectivity, not sequence.  
+2. Clock pins are larger due to their importance and susceptibility to delays.  
+
+<div align="center">
+  <img src="assets/pls2.png" alt="pin_placement">
+</div>
+<br />
+
+### 6. Logical Cell Placement Blockage
+
+Placement blockages outside the core and inside the die prevents automated placement and routing tool from placing any other cells into the the pin-dedicated area.
+
+<div align="center">
+  <img src="assets/block.png" alt="cell_placement_blockage">
+</div>
+<br />
+
+</details>

@@ -523,16 +523,36 @@ Pre-placing cells refers to reusing pre-designed blocks (e.g., memory, comparato
 
 Macros should be placed close to input pins for reduced wiring length. They are placed during the Floorplan stage, with placement blockages defined to prevent standard cells from being placed nearby, and they also reduce Time-to-Market.  
 
----
+### 3. Surround Pre-Placed cells with De-Coupling Capacitors
 
-**De-Coupling Capacitors**  
-Pre-placed blocks often drain high power. Voltage drops in interconnecting wires may cause insufficient power for switching.  
+<div align="center">
+  <img src="assets/decoup.png" alt="placement_decoupling_capacitor">
+</div>
+<br />
 
-De-coupling capacitors (De-cap cells) are placed near high-power blocks.  
-De-cap cells charge when not switching and supply power during switching.  
-This ensures stable power delivery for high-power blocks.  
+Decoupling capacitors are used in SoC design near high-power-demanding blocks or macros to stabilize voltage by locally storing charge. They charge when signals switch from 0 to 1 and supply energy during peak current demands, reducing the reliance on distant power sources. The power supply wires have inherent resistance and inductance, which cause a voltage drop during current flow, leading to a slightly reduced voltage at the load (Vdd' < Vdd). This voltage drop becomes more pronounced over larger physical distances, making it difficult to maintain stable voltage levels. 
 
----
+<div align="center">
+  <img src="assets/noisemargin.png" alt="noisemargin">
+</div>
+<br />
+
+If the drop pushes the voltage below the noise margin, the circuit may enter an undefined state, resulting in failures or incorrect outputs. 
+
+<div align="center">
+  <img src="assets/decoup2.png" alt="placement_decoupling_capacitor">
+</div>
+<br />
+
+Decoupling capacitors mitigate this by supplying the required energy locally during switching, ensuring stable operation and preventing voltage drops from falling below safe levels.
+
+<div align="center">
+  <img src="assets/decoup3.png" alt="placement_decoupling_capacitor">
+</div>
+<br />
+
+### 4. Surround Pre-Placed cells with De-Coupling Capacitors
+
 
 **Power Planning**  
 De-cap cells have limitations like leakage power and increased chip area.  

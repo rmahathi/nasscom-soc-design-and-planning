@@ -319,7 +319,7 @@ ASIC design is a complex process involving numerous steps, methodologies, and ED
 
 Aim is to run 'picorv32a' design synthesis using OpenLANE flow and generate necessary outputs and then calculate the flop ratio.
 
-### To run Design Synthesis - picorv32a using OpenLANE flow
+## DAY 1 LAB - To run Design Synthesis - picorv32a using OpenLANE flow
 
 Commands to invoke the OpenLANE flow and perform synthesis
 
@@ -632,3 +632,15 @@ Placement blockages outside the core and inside the die prevents automated place
 <br />
 
 </details>
+
+<details>
+<summary> 
+
+## DAY 2 LAB - To run Design Floorplan - picorv32a using OpenLANE flow
+
+</summary>
+
+
+<p align='justify'>
+Before initiating the floorplan stage, designers must verify and adjust crucial switches that control the floorplan's characteristics. These configuration parameters, including utilization factor and aspect ratio, must align with the project's specific requirements to ensure optimal floorplan execution. A proper review of these switches helps prevent potential issues and ensures the floorplan process proceeds as intended.
+</p>

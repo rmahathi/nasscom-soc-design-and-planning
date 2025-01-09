@@ -530,9 +530,9 @@ Macros should be placed close to input pins for reduced wiring length. They are 
   <img src="assets/decoup.png" alt="placement_decoupling_capacitor">
 </div>
 <br />
-
+<p align="justify"> 
 Decoupling capacitors are used in SoC design near high-power-demanding blocks or macros to stabilize voltage by locally storing charge. They charge when signals switch from 0 to 1 and supply energy during peak current demands, reducing the reliance on distant power sources. The power supply wires have inherent resistance and inductance, which cause a voltage drop during current flow, leading to a slightly reduced voltage at the load (Vdd' < Vdd). This voltage drop becomes more pronounced over larger physical distances, making it difficult to maintain stable voltage levels. 
-
+</p>
 <div align="center">
   <img src="assets/noisemargin.png" alt="noisemargin">
 </div>
@@ -552,32 +552,55 @@ Decoupling capacitors mitigate this by supplying the required energy locally dur
 </div>
 <br />
 
-### 4. Surround Pre-Placed cells with De-Coupling Capacitors
+### 4. Power Planning 
 
+In power planning for SoC design, consider a macro where a 16-bit orange bus carries a 0-to-1 signal. Being far from the power source introduces voltage drops due to resistance and inductance in the supply wires.
 
-**Power Planning**  
-De-cap cells have limitations like leakage power and increased chip area.  
-Power Planning uses separate meshes for Vdd and Ground to avoid:  
-1. **Voltage Drop**: Power shortage when multiple cells switch simultaneously from 0 to 1.  
-2. **Ground Bounce**: Voltage rise when multiple cells switch from 1 to 0.  
+<div align="center">
+  <img src="assets/pow.png" alt="power_planning">
+</div>
+<br />
 
----
+To handle signal transitions, drivers (e.g., inverters) are employed. An inverter converts the input signal to its complement (0 to 1 or 1 to 0), driving the next stage effectively.
 
-Top metal layers create Vdd and Ground meshes to minimize voltage drop.  
-These meshes spread across the design, providing local power and ground sources.  
+<div align="center">
+  <img src="assets/pow1.png" alt="power_planning">
+</div>
+<br />
 
----
+1-to-0 Transition - Ground Bounce:
 
-**Pin Placement and Logical Cell Placement Blockage**  
-Pin placement impacts wire length and connectivity. Pins must be placed to minimize wire length.  
-For example, an input pin driving two blocks should be near them.  
+In a 1-to-0 transition, the previously charged nodes discharge rapidly to ground. If all 16 bits discharge at once, the ground potential may fluctuate, causing a phenomenon called ground bounce. This occurs due to inductance in the ground path, leading to temporary voltage spikes. If the ground bounce crosses the noise margin, it can cause unpredictable behavior, further increasing the risk of errors in circuit operation.
 
----
+<div align="center">
+  <img src="assets/pow2.png" alt="power_planning">
+</div>
+<br />
 
-In effective pin placement:  
-1. Pin order is based on connectivity, not sequence.  
-2. Clock pins are larger due to their importance and susceptibility to delays.  
+0-to-1 Transition - Voltage Drop:
 
-Placement blockages outside the core and inside the die prevent other cells from occupying the pin-dedicated area.  
+When a 0-to-1 transition occurs, the driver charges the load capacitance of the connected circuit. This charging demands significant current, especially for all 16 bits transitioning simultaneously. A voltage drop across the supply wires may occur due to the high current demand, reducing Vdd' and risking a voltage level near or below the noise margin. If the voltage drops significantly, the circuit can enter an undefined state, leading to unreliable outputs.
 
----
+<div align="center">
+  <img src="assets/pow4.png" alt="power_planning">
+</div>
+<br />
+
+Simultaneous Switching Problem:
+
+When multiple signals (0-to-1 or 1-to-0) switch at the same time, the cumulative current demand rises sharply. For a 0-to-1 transition, the power supply must provide a surge of current to charge the capacitors, while for a 1-to-0 transition, a large discharge current flows to ground. Both cases can result in severe voltage drops or ground bounce due to the limitations of a single-point power supply.
+
+<div align="center">
+  <img src="assets/pow5.png" alt="power_planning">
+</div>
+<br />
+
+Solution: Power Mesh
+The solution is to replace the single-point power supply with a power mesh. A power mesh distributes Vdd and ground throughout the chip using a network of interconnected wires, reducing the resistance and inductance between the source and various blocks. By bringing power closer to the loads and reducing the effective distance, the voltage drop and ground bounce are minimized. The power mesh ensures that all parts of the circuit can access stable supply and ground levels, even during peak current demands, maintaining signal integrity and preventing undefined states.
+
+<div align="center">
+  <img src="assets/pow6.png" alt="power_planning">
+</div>
+<br />
+
+### 5. Pin Placement

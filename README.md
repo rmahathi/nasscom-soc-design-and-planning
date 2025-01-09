@@ -432,7 +432,7 @@ All picorv32a logs, reports and results can be found here:
 ## Chip Floor Planning Considerations
 </summary>
 
-### Ulitization Factor and Aspect Ratio - Identifying the Width of the Die and Core
+### 1. Identifying the Width of the Die and Core
 <br />
 
 <div align="center">
@@ -502,11 +502,15 @@ Utilization\ Factor = \frac{4\ sq.\ units}{4\ sq.\ units} = 1
 Aspect\ Ratio = \frac{2\ units}{2\ units} = 1\ (Square\ core)
 ```
 
+### 2. Define Locations of Pre-Placed Cells
 
----
-
-**Concept of Pre-Placed Cells**  
 Pre-placing cells refers to reusing pre-designed blocks (e.g., memory, comparators, MUX). These blocks are called macros or IPs.  
+
+<div align="center">
+  <img src="assets/prepl.png" alt="npreplaced_cell">
+</div>
+<br />
+
 
 Macros should be placed close to input pins for reduced wiring length.  
 They are placed during the Floorplan stage, with placement blockages defined to prevent standard cells from being placed nearby.  

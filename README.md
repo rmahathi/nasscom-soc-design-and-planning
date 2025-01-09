@@ -432,7 +432,7 @@ All picorv32a logs, reports and results can be found here:
 ## Chip Floor Planning Considerations
 </summary>
 
-### Ulitization Factor and Aspect Ratio
+### Ulitization Factor and Aspect Ratio - Identifying the Width of the Die and Core
 <br />
 
 <div align="center">
@@ -457,12 +457,14 @@ The height and width of the core area depend on the design's netlist. These are 
 </div>
 <br />
 
-
-</details>
-
 For example, consider a netlist with two logic gates and two flip-flops, each with an area of 1 sq. unit. The total core area required is 4 sq. units.  
 
----
+<div align="center">
+  <img src="assets/netlist2.png" alt="netlist">
+</div>
+<br />
+
+</details>
 
 **Utilization Factor**  
 Utilization Factor is the ratio of the core area occupied by the netlist to the total core area.  

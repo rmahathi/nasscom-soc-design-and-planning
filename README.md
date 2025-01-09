@@ -439,20 +439,25 @@ All picorv32a logs, reports and results can be found here:
 </div>
 <br />
 
-</details>
-
 <p align="justify"> 
 
 To determine the Utilization Factor and Aspect Ratio, the height and width of core and die areas must first be defined.
 
- Core is the area in a chip used for placing all the logic cells and components. It is where the logic resides in a chip.
+- Core is the area in a chip used for placing all the logic cells and components. It is where the logic resides in a chip.
 
- Die is the area encircling the core, used for placing I/O-related components.  
+- Die is the area encircling the core, used for placing I/O-related components.  
 
 The height and width of the core area depend on the design's netlist. These are based on the number of components required to execute the logic. The die area's height and width depend on the core's dimensions.  
 
 </p>
 
+<div align="center">
+  <img src="assets/netlist.png" alt="netlist">
+</div>
+<br />
+
+
+</details>
 
 For example, consider a netlist with two logic gates and two flip-flops, each with an area of 1 sq. unit. The total core area required is 4 sq. units.  
 

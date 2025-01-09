@@ -507,14 +507,21 @@ Aspect\ Ratio = \frac{2\ units}{2\ units} = 1\ (Square\ core)
 Pre-placing cells refers to reusing pre-designed blocks (e.g., memory, comparators, MUX). These blocks are called macros or IPs.  
 
 <div align="center">
-  <img src="assets/prepl.png" alt="npreplaced_cell">
+  <img src="assets/prepl.png" alt="preplaced_cell">
 </div>
 <br />
 
+<div align="center">
+  <img src="assets/prepl2.png" alt="preplaced_cell">
+</div>
+<br />
 
-Macros should be placed close to input pins for reduced wiring length.  
-They are placed during the Floorplan stage, with placement blockages defined to prevent standard cells from being placed nearby.  
-Using pre-placed cells reduces Time-to-Market.  
+<div align="center">
+  <img src="assets/prepl3.png" alt="preplaced_cell">
+</div>
+<br />
+
+Macros should be placed close to input pins for reduced wiring length. They are placed during the Floorplan stage, with placement blockages defined to prevent standard cells from being placed nearby, and they also reduce Time-to-Market.  
 
 ---
 

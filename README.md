@@ -471,27 +471,35 @@ Area occupied by the above netlist on a silicon wafer
 </div>
 <br />
 
-**Utilization Factor**  
+#### Utilization Factor 
 Utilization Factor is the ratio of the core area occupied by the netlist to the total core area.  
 For a good FloorPlan, the Utilization Factor should never be '1' to allow space for additional logic.  
 
-Utilization Factor = (Area occupied by netlist / Total core area)  
+```math
+Utilization\ Factor = \frac{Area\ occupied\ by\ netlist}{Total\ core\ area}
+```
 
-**Aspect Ratio**  
+#### Aspect Ratio 
 Aspect Ratio is the ratio of the core's height to its width.  
 If the Aspect Ratio is '1', the core is square. Otherwise, it is rectangular.  
 
-Aspect Ratio = (Height of the core / Width of the core)  
-
+```math
+Aspect\ Ratio = \frac{Height\ of\ the\ core}{Width\ of\ the\ core}
+```
 <div align="center">
   <img src="assets/netlist4.png" alt="netlist">
 </div>
 <br />
 
-**Calculations**  
+#### Calculations
  
-Utilization Factor = (4 sq. units) / (4 sq. units) = 1  
-Aspect Ratio = (2 units) / (2 units) = 1 (Square core)  
+```math
+Utilization\ Factor = \frac{4\ sq.\ units}{4\ sq.\ units} = 1
+```
+
+```math
+Aspect\ Ratio = \frac{2\ units}{2\ units} = 1\ (Square\ core)
+```
 
 
 ---

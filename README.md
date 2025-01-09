@@ -524,6 +524,7 @@ Pre-placing cells refers to reusing pre-designed blocks (e.g., memory, comparato
 Macros should be placed close to input pins for reduced wiring length. They are placed during the Floorplan stage, with placement blockages defined to prevent standard cells from being placed nearby, and they also reduce Time-to-Market.  
 
 ### 3. Surround Pre-Placed cells with De-Coupling Capacitors
+<br />
 
 <div align="center">
   <img src="assets/decoup.png" alt="placement_decoupling_capacitor">

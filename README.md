@@ -486,13 +486,14 @@ If the Aspect Ratio is '1', the core is square. Otherwise, it is rectangular.
 ```math
 Aspect\ Ratio = \frac{Height\ of\ the\ core}{Width\ of\ the\ core}
 ```
+
+#### Calculations
+ 
 <div align="center">
   <img src="assets/netlist4.png" alt="netlist">
 </div>
 <br />
 
-#### Calculations
- 
 ```math
 Utilization\ Factor = \frac{4\ sq.\ units}{4\ sq.\ units} = 1
 ```

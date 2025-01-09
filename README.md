@@ -433,6 +433,7 @@ All picorv32a logs, reports and results can be found here:
 </summary>
 
 ### Ulitization Factor and Aspect Ratio
+<br />
 
 <div align="center">
   <img src="assets/diecore.png" alt="diecore">

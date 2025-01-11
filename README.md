@@ -645,3 +645,72 @@ Placement blockages outside the core and inside the die prevents automated place
 <p align='justify'>
 Before initiating the floorplan stage, designers must verify and adjust crucial switches that control the floorplan's characteristics. These configuration parameters, including utilization factor and aspect ratio, must align with the project's specific requirements to ensure optimal floorplan execution. A proper review of these switches helps prevent potential issues and ensures the floorplan process proceeds as intended.
 </p>
+
+<div align="center">
+  <img src="assets/eight.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/nine.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/ten.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/eleven.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/twelve.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/thirteen.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/fourteen.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/fifteen.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/sixteen.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/seventeen.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/eighteen.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/nineteen.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/twenty.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/twentyone.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/twentytwo.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/twentythree.png" alt="Screenshot">
+</div>
+<br />
+<div align="center">
+  <img src="assets/twentyfour.png" alt="Screenshot">
+</div>
+<br />

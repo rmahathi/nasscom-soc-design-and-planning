@@ -904,3 +904,39 @@ magic -T /home/vsduser//Desktop/work/tools/openlane_working_dir/pdks/sky130A/lib
 </details>
 
 ---
+
+<details>
+<summary> 
+
+## Cell design and characterization flows
+
+</summary>
+
+### Cell Design Flow
+
+<div align="center">
+  <img src="assets/celldes.png" alt="CellDesign">
+</div>
+<br />
+
+### characterization Flow
+
+1. Read in the Model Files: Load the necessary model files (such as process libraries, PDK files, or any predefined models) that are required for the characterization of the cells.
+
+2. Read the Extracted SPICE Netlist: Import the SPICE netlist generated for the design, which contains the circuit elements (such as transistors, resistors, capacitors) and their connections.
+
+3. Recognize the Behavior of the Buffer: Identify and analyze the behavior of the buffer cells in the netlist, focusing on how they condition and regenerate the signal.
+
+4. Read Subcircuits of the Inverter: Extract and analyze the subcircuits related to inverters (which are often used for logic operations in the library) to model their performance accurately.
+
+5. Attach Necessary Power Sources: Ensure that the power sources (such as VDD, ground) are connected correctly to the cells and subcircuits, enabling proper functionality during simulations.
+
+6. Apply the Stimulus: Apply test stimulus (input signals) to the buffer and inverter cells, simulating realistic input conditions like rising and falling edges, transitions, and signal patterns.
+
+7. Provide Necessary Output Capacitances: Define the output capacitances that are connected to the output of the cells to simulate the load conditions for the buffer and inverter circuits.
+
+8. Provide Necessary Simulation Commands: Set up and run the necessary simulation commands (e.g., .tran for transient analysis) to obtain results like delays, rise/fall times, and power consumption.
+
+</details>
+
+---

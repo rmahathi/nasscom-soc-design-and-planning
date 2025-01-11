@@ -922,7 +922,6 @@ magic -T /home/vsduser//Desktop/work/tools/openlane_working_dir/pdks/sky130A/lib
 
 ### Characterization Flow
 
-<br />
 <b>STEP 1: Read in the Model Files</b><br>
 Load the necessary model files (such as process libraries, PDK files, or any predefined models) that are required for the characterization of the cells.<br><br>
 <b>STEP 2: Read the Extracted SPICE Netlist</b><br>

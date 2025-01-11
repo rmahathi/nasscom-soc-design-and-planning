@@ -854,7 +854,9 @@ All picorv32a logs, reports and results can be found here:
 Commands to invoke the OpenLANE flow and run placement
 
 ```tcl
-# Previous section sets up the design environment for 'picorv32a', performs synthesis to generate a gate-level netlist, initializes the floorplan, places IO pins, inserts tap cells and decoupling capacitors, generates the power grid, and completes the detailed floorplanning process to prepare the design for placement and routing.
+# Previous section sets up the design environment for 'picorv32a'
+# Performs synthesis to generate a gate-level netlist
+# Initializes the floorplan, places IO pins, inserts tap cells and decoupling capacitors, generates the power grid, and completes the detailed floorplanning process to prepare the design for placement and routing.
 
 # Perform global placement
 run_placement

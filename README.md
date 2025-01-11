@@ -734,6 +734,7 @@ run_floorplan
   <img src="assets/eighteen.png" alt="Screenshot">
 </div>
 <br />
+<br />
 <div align="center">
   <img src="assets/nineteen.png" alt="Screenshot">
 </div>
@@ -741,6 +742,13 @@ run_floorplan
 <div align="center">
   <img src="assets/twenty.png" alt="Screenshot">
 </div>
+<br />
+
+Steps to Open Magic
+
+```
+magic -T /home/vsduser//Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
 <br />
 <div align="center">
   <img src="assets/twentyone.png" alt="Screenshot">

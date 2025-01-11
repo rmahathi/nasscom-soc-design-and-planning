@@ -841,3 +841,43 @@ All picorv32a logs, reports and results can be found here:
 </details>
 
 ---
+
+<details>
+<summary> 
+
+## DAY 2 LAB -  Design Placement- picorv32a 
+
+</summary>
+
+### To run Design Placement - picorv32a using OpenLANE flow
+
+Commands to invoke the OpenLANE flow and run placement
+
+```tcl
+# Previous section sets up the design environment for 'picorv32a', performs synthesis to generate a gate-level netlist, initializes the floorplan, places IO pins, inserts tap cells and decoupling capacitors, generates the power grid, and completes the detailed floorplanning process to prepare the design for placement and routing.
+
+# Perform global placement
+run_placement
+
+```
+
+<div align="center">
+  <img src="assets/twentyfive.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/twentysix.png" alt="Screenshot">
+</div>
+<br />
+
+Steps to Open Magic
+
+```
+magic -T /home/vsduser//Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
+
+<div align="center">
+  <img src="assets/twentyseven.png" alt="Screenshot">
+</div>
+<br />

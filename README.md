@@ -890,3 +890,17 @@ magic -T /home/vsduser//Desktop/work/tools/openlane_working_dir/pdks/sky130A/lib
   <img src="assets/twentyseven.png" alt="Screenshot">
 </div>
 <br />
+
+<div align="center">
+  <img src="assets/twentyeight.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/twentynine.png" alt="Screenshot">
+</div>
+<br />
+
+</details>
+
+---

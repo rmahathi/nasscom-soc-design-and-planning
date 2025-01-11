@@ -798,3 +798,14 @@ All picorv32a logs, reports and results can be found here:
 </details>
 
 ---
+
+<details>
+<summary> 
+
+## Library Binding and Placement
+</summary>
+
+
+</details>
+
+---

@@ -813,6 +813,30 @@ All picorv32a logs, reports and results can be found here:
 ## Library Binding and Placement
 </summary>
 
+<div align="center">
+  <img src="assets/libbin.png" alt="libbin">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/libbin1.png" alt="libbin">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/libbin2.png" alt="libbin">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/libbin3.png" alt="libbin">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/libbin4.png" alt="libbin">
+</div>
+<br />
 
 </details>
 

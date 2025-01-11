@@ -640,44 +640,6 @@ Placement blockages outside the core and inside the die prevents automated place
 
 ## DAY 2 LAB -  Design Floorplan- picorv32a 
 
-### To run Design Synthesis - picorv32a using OpenLANE flow
-
-Commands to invoke the OpenLANE flow and perform synthesis
-
-```bash
-# Navigate to the OpenLANE flow directory
-cd Desktop/work/tools/openlane_working_dir/openlane
-
-# Use the alias 'docker' for the long Docker run command
-# This alias simplifies invoking the OpenLANE Docker container
-docker
-
-```
-```tcl
-# Launch the OpenLANE flow in interactive mode
-./flow.tcl -interactive
-
-# Load the OpenLANE package for proper functionality
-package require openlane 0.9
-
-# Prepare the design environment for 'picorv32a' by creating necessary files and directories
-prep -design picorv32a
-
-# Run synthesis for the prepared design
-run_synthesis
-
-init_floorplan
-
-place_io
-
-tap_decap_or
-
-run_power_grid_generation
-
-run_floorplan
-
-```
-
 </summary>
 
 <p align='justify'>
@@ -703,6 +665,50 @@ Before initiating the floorplan stage, designers must verify and adjust crucial 
 <div align="center">
   <img src="assets/twelve.png" alt="Screenshot">
 </div>
+<br />
+
+### To run Design Floorplan - picorv32a using OpenLANE flow
+
+Commands to invoke the OpenLANE flow and run floorplan
+
+```bash
+# Navigate to the OpenLANE flow directory
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Use the alias 'docker' for the long Docker run command
+# This alias simplifies invoking the OpenLANE Docker container
+docker
+
+```
+```tcl
+# Launch the OpenLANE flow in interactive mode
+./flow.tcl -interactive
+
+# Load the OpenLANE package for proper functionality
+package require openlane 0.9
+
+# Prepare the design environment for 'picorv32a' by creating necessary files and directories
+prep -design picorv32a
+
+# Run synthesis for the prepared design
+run_synthesis
+
+# Initialize the floorplan for the design
+init_floorplan
+
+# Place the IO pins in the design
+place_io
+
+# Insert tap cells and decoupling capacitors
+tap_decap_or
+
+# Generate the power grid
+run_power_grid_generation
+
+# Perform detailed floorplanning after power grid generation
+run_floorplan
+
+```
 <br />
 <div align="center">
   <img src="assets/thirteen.png" alt="Screenshot">

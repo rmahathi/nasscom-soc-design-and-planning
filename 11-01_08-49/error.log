@@ -1,4 +1,0 @@
-during executing: "openroad -exit /openLANE_flow/scripts/openroad/or_pdn.tcl |& tee >&@stdout /openLANE_flow/designs/picorv32a/runs/11-01_08-49/logs/floorplan/7-pdn.log"
-Last 10 lines:
-child process exited abnormally
-

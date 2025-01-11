@@ -828,6 +828,13 @@ All picorv32a logs, reports and results can be found here:
 </div>
 <br />
 
+Repeaters, also known as buffers, are essential components in digital designs to recondition and regenerate signals, 
+ensuring that they maintain their integrity over long distances. These buffers help replicate the original signal and send 
+it again without degradation. In the placement process, buffers are strategically placed based on slew analysis to optimize 
+signal quality and timing, preventing signal degradation or delays. This ensures the overall performance of the design by 
+maintaining proper signal strength and timing across the chip.
+<br />
+
 <div align="center">
   <img src="assets/libbin3.png" alt="libbin">
 </div>

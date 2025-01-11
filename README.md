@@ -758,9 +758,9 @@ run_floorplan
 ```
 
 ```math
-Die\ width\ in\ unit\ distance = 660685 - 0 = 660685
+Die\ width\ in\ unit\ distance = 660685 - 0 = 660685 
 ```
-
+  
 ```math
 Die\ height\ in\ unit\ distance = 671405 - 0 = 671405
 ```

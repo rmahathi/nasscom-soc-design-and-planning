@@ -640,6 +640,44 @@ Placement blockages outside the core and inside the die prevents automated place
 
 ## DAY 2 LAB -  Design Floorplan- picorv32a 
 
+### To run Design Synthesis - picorv32a using OpenLANE flow
+
+Commands to invoke the OpenLANE flow and perform synthesis
+
+```bash
+# Navigate to the OpenLANE flow directory
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Use the alias 'docker' for the long Docker run command
+# This alias simplifies invoking the OpenLANE Docker container
+docker
+
+```
+```tcl
+# Launch the OpenLANE flow in interactive mode
+./flow.tcl -interactive
+
+# Load the OpenLANE package for proper functionality
+package require openlane 0.9
+
+# Prepare the design environment for 'picorv32a' by creating necessary files and directories
+prep -design picorv32a
+
+# Run synthesis for the prepared design
+run_synthesis
+
+init_floorplan
+
+place_io
+
+tap_decap_or
+
+run_power_grid_generation
+
+run_floorplan
+
+```
+
 </summary>
 
 <p align='justify'>
@@ -739,3 +777,7 @@ Area\ of\ die\ in\ microns = 660.685 * 671.405 = 443587.212425\ Square\ Microns
   <img src="assets/twentyfour.png" alt="Screenshot">
 </div>
 <br />
+
+All picorv32a logs, reports and results can be found here:
+
+[Section 2 Run - 11-01_08-49)](https://github.com/rmahathi/nasscom-soc-design-and-planning/tree/main/11-01_08-49)

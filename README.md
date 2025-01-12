@@ -1031,11 +1031,15 @@ Set up and run the necessary simulation commands (e.g., .tran for transient anal
 
 </summary>
 
+### Characterization Setup
+
 <br />
 <div align="center">
   <img src="assets/timchr1.png" alt="TimingCharacteristic 1">
 </div>
 <br />
+
+### 1. Timing Threshold
 
 ### Slew Rate Thresholds
 The slew rate defines the rate of change of a signal's voltage level. Thresholds for rising and falling transitions help quantify the slew rate by identifying specific voltage levels at which these transitions begin and end.
@@ -1108,6 +1112,55 @@ Represents the threshold level for the output signal's falling edge, typically s
 </div>
 <br />
 
+### 2. Propagation Delay 
+
+```math
+\text{Delay} = \text{time(out\_fall\_thr)} - \text{time(in\_rise\_thr)}
+```
+
+<div align="center">
+  <img src="assets/timchr10.png" alt="TimingCharacteristic 9">
+</div>
+<br />
+
+A negative propagation delay can occur when the output signal changes before the input signal reaches its threshold. This can happen if a higher, incorrect threshold is chosen for the input signal, as it fails to account for the actual timing relationship, leading to skewed or misleading delay calculations.
+<div align="center">
+  <img src="assets/timchr11.png" alt="TimingCharacteristic 9">
+</div>
+<br />
+
+Negative delay can occur even with the correct 50% threshold if the input signal has a high slew rate. This is because the steep input transition skews the timing relationship, causing the output to react faster or appear delayed incorrectly. Proper slew rate control is crucial for accurate timing analysis.
+
+<div align="center">
+  <img src="assets/timchr12.png" alt="TimingCharacteristic 9">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/timchr13.png" alt="TimingCharacteristic 9">
+</div>
+<br />
+
+### 3. Transition Time
+
+### Transition Time (Rise)
+Transition time for a rising edge refers to the time taken by a signal to change from a low voltage level to a high voltage level. It is a critical parameter in digital circuits, impacting the speed at which signals propagate through logic gates and affecting overall circuit performance.
+
+```math
+\text{Transition Time (Rise)} = \text{time(slew\_high\_rise\_thr)} - \text{time(slew\_low\_rise\_thr)}
+```
+
+### Transition Time (Fall)
+Transition time for a falling edge is the time it takes for a signal to change from a high voltage level to a low voltage level. Like the rise transition time, the fall transition time plays a significant role in the timing characteristics and performance of digital circuits, influencing how quickly signals can switch between states.
+
+```math
+\text{Transition Time (Fall)} = \text{time(slew\_high\_fall\_thr)} - \text{time(slew\_low\_fall\_thr)}
+```
+
+<div align="center">
+  <img src="assets/timchr14.png" alt="TimingCharacteristic 9">
+</div>
+<br />
 
 </details>
 

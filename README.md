@@ -1118,6 +1118,8 @@ Represents the threshold level for the output signal's falling edge, typically s
 \text{Delay} = \text{time(out\_fall\_thr)} - \text{time(in\_rise\_thr)}
 ```
 
+<br />
+
 <div align="center">
   <img src="assets/timchr10.png" alt="TimingCharacteristic 9">
 </div>
@@ -1156,7 +1158,7 @@ Transition time for a falling edge is the time it takes for a signal to change f
 ```math
 \text{Transition Time (Fall)} = \text{time(slew\_high\_fall\_thr)} - \text{time(slew\_low\_fall\_thr)}
 ```
-
+<br />
 <div align="center">
   <img src="assets/timchr14.png" alt="TimingCharacteristic 9">
 </div>

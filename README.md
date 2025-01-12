@@ -1115,7 +1115,7 @@ Represents the threshold level for the output signal's falling edge, typically s
 ### 2. Propagation Delay 
 
 ```math
-\mathbf{Delay} = \text{time(out\_fall\_thr)} - \text{time(in\_rise\_thr)}
+\boxed{\mathbf{Delay} = \text{time(out\_fall\_thr)} - \text{time(in\_rise\_thr)}}
 ```
 
 <br />
@@ -1148,14 +1148,14 @@ Negative delay can occur even with the correct 50% threshold if the input signal
 Transition time for a rising edge refers to the time taken by a signal to change from a low voltage level to a high voltage level. It is a critical parameter in digital circuits, impacting the speed at which signals propagate through logic gates and affecting overall circuit performance.
 
 ```math
-\mathbf{\text{Transition Time (Rise)}} = \text{time(slew\_high\_rise\_thr)} - \text{time(slew\_low\_rise\_thr)}
+\boxed{\mathbf{\text{Transition Time (Rise)}} = \text{time(slew\_high\_rise\_thr)} - \text{time(slew\_low\_rise\_thr)}}
 ```
 
 ### Transition Time (Fall)
 Transition time for a falling edge is the time it takes for a signal to change from a high voltage level to a low voltage level. Like the rise transition time, the fall transition time plays a significant role in the timing characteristics and performance of digital circuits, influencing how quickly signals can switch between states.
 
 ```math
-\mathbf{\text{Transition Time (Fall)}} = \text{time(slew\_high\_fall\_thr)} - \text{time(slew\_low\_fall\_thr)}
+\boxed{\mathbf{\text{Transition Time (Fall)}} = \text{time(slew\_high\_fall\_thr)} - \text{time(slew\_low\_fall\_thr)}}
 ```
 <br />
 <div align="center">

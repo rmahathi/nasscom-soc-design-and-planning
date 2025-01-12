@@ -1020,6 +1020,94 @@ Set up and run the necessary simulation commands (e.g., .tran for transient anal
 <br />
 
 
+</details>
+
+---
+
+<details>
+<summary> 
+
+## General timing characterization parameters
+
+</summary>
+
+<br />
+<div align="center">
+  <img src="assets/timchr1.png" alt="TimingCharacteristic 1">
+</div>
+<br />
+
+### Slew Rate Thresholds
+The slew rate defines the rate of change of a signal's voltage level. Thresholds for rising and falling transitions help quantify the slew rate by identifying specific voltage levels at which these transitions begin and end.
+
+<b>slew_low_rise_thr (Lower Threshold for Rising Signal Transition):</b><br />
+Represents the lower bound of the rising edge of a signal transition, commonly set to 20% of the signal's maximum amplitude (from 0). This point is where the signal starts to significantly rise.
+
+<div align="center">
+  <img src="assets/timchr2.png" alt="TimingCharacteristic 2">
+</div>
+<br />
+
+<b>slew_high_rise_thr (Upper Threshold for Rising Signal Transition):</b><br />
+Represents the upper bound of the rising edge of a signal transition, commonly set to 80% of the signal's maximum amplitude. This point is where the signal has nearly completed its rise.
+
+<div align="center">
+  <img src="assets/timchr3.png" alt="TimingCharacteristic 3">
+</div>
+<br />
+
+<b>slew_low_fall_thr (Lower Threshold for Falling Signal Transition):</b><br />
+Represents the lower bound of the falling edge of a signal transition, commonly set to 20% of the signal's maximum amplitude. This point indicates where the signal starts to significantly fall.
+
+<div align="center">
+  <img src="assets/timchr4.png" alt="TimingCharacteristic 4">
+</div>
+<br />
+
+<b>slew_high_fall_thr (Upper Threshold for Falling Signal Transition):</b><br />
+Represents the upper bound of the falling edge of a signal transition, commonly set to 80% of the signal's maximum amplitude. This point indicates where the signal has almost completed its fall.
+
+<div align="center">
+  <img src="assets/timchr5.png" alt="TimingCharacteristic 5">
+</div>
+<br />
+
+### Input Signal Thresholds
+
+<b>in_rise_thr (Threshold for Input Signal Rising Edge):</b><br />
+Represents the threshold level for the input signal's rising edge, typically set to 50% of the signal's maximum amplitude. This point is used for accurate timing analysis of the input transition.
+
+<div align="center">
+  <img src="assets/timchr6.png" alt="TimingCharacteristic 6">
+</div>
+<br />
+
+<b>in_fall_thr (Threshold for Input Signal Falling Edge):</b><br />
+Represents the threshold level for the input signal's falling edge, typically set to 50% of the signal's maximum amplitude. This point is used to determine the critical timing of the input descent.
+
+<div align="center">
+  <img src="assets/timchr8.png" alt="TimingCharacteristic 8">
+</div>
+<br />
+
+### Output Signal Thresholds
+
+<b>out_rise_thr (Threshold for Output Signal Rising Edge):</b><br />
+Represents the threshold level for the output signal's rising edge, typically set to 50% of the signal's maximum amplitude. This point is crucial for measuring propagation delays and output transition timing.
+
+<div align="center">
+  <img src="assets/timchr7.png" alt="TimingCharacteristic 7">
+</div>
+<br />
+
+<b>out_fall_thr (Threshold for Output Signal Falling Edge):</b><br />
+Represents the threshold level for the output signal's falling edge, typically set to 50% of the signal's maximum amplitude. This point is used to measure the timing when the output signal is transitioning downward.
+
+<div align="center">
+  <img src="assets/timchr9.png" alt="TimingCharacteristic 9">
+</div>
+<br />
+
 
 </details>
 

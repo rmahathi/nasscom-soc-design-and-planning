@@ -1169,6 +1169,42 @@ Transition time for a falling edge is the time it takes for a signal to change f
 
 # Section 3 - Design library cell using Magic Layout and ngspice characterization
 
+## DAY 3 LAB - Using the IO placer to change the distance between tap cells
+
+```bash
+
+# Set IO mode to 2 (unequally spaced pins)
+set ::env(FP_IO_MODE) 2
+
+# Execute floorplanning again
+run_floorplan
+
+```
+
+<div align="center">
+  <img src="assets/thirty.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/thirtyone.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/thirtytwo.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/thirtythree.png" alt="Screenshot">
+</div>
+<br />
+
+</details>
+
+---
+
 <details>
 <summary> 
 
@@ -1269,38 +1305,6 @@ Transition time for a falling edge is the time it takes for a signal to change f
 
 ## DAY 3 LAB - Design library cell using Magic Layout and ngspice characterization 
 </summary>
-
-### Using the IO placer to change the distance between tap cells
-
-```bash
-
-# Set IO mode to 2 (unequally spaced pins)
-set ::env(FP_IO_MODE) 2
-
-# Execute floorplanning again
-run_floorplan
-
-```
-
-<div align="center">
-  <img src="assets/thirty.png" alt="Screenshot">
-</div>
-<br />
-
-<div align="center">
-  <img src="assets/thirtyone.png" alt="Screenshot">
-</div>
-<br />
-
-<div align="center">
-  <img src="assets/thirtytwo.png" alt="Screenshot">
-</div>
-<br />
-
-<div align="center">
-  <img src="assets/thirtythree.png" alt="Screenshot">
-</div>
-<br />
 
 ### Clone custom inverter standard cell design from github repository
 

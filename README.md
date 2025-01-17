@@ -1169,7 +1169,11 @@ Transition time for a falling edge is the time it takes for a signal to change f
 
 # Section 3 - Design library cell using Magic Layout and ngspice characterization
 
+<details>
+<summary> 
+
 ## DAY 3 LAB - Using the IO placer to change the distance between tap cells
+</summary>
 
 ```bash
 

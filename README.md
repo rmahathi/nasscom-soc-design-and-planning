@@ -1305,3 +1305,8 @@ magic -T sky130A.tech sky130_inv.mag &
   <img src="assets/thirtysix.png" alt="Screenshot">
 </div>
 <br />
+
+<div align="center">
+  <img src="assets/thirtyseven.png" alt="Screenshot">
+</div>
+<br />

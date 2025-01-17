@@ -1307,10 +1307,8 @@ run_floorplan
 <details>
 <summary> 
 
-## DAY 3 LAB - Design library cell using Magic Layout and ngspice characterization 
+## DAY 3 LAB - Clone custom inverter standard cell design from github repository
 </summary>
-
-### Clone custom inverter standard cell design from github repository
 
 ```bash
 # Change directory to openlane
@@ -1351,3 +1349,19 @@ magic -T sky130A.tech sky130_inv.mag &
   <img src="assets/thirtyseven.png" alt="Screenshot">
 </div>
 <br />
+
+</details>
+
+---
+
+<details>
+<summary> 
+
+## Inception of Layout & CMOS fabrication process
+</summary>
+
+
+
+</details>
+
+---

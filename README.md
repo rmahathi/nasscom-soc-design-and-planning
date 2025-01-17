@@ -1270,6 +1270,32 @@ Transition time for a falling edge is the time it takes for a signal to change f
 ## DAY 3 LAB - Design library cell using Magic Layout and ngspice characterization 
 </summary>
 
+### Using the IO placer to change the distance between tap cells
+
+```bash
+set env(FP_IO_MODE) 2
+```
+
+<div align="center">
+  <img src="assets/thirty.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/thirtyone.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/thirtytwo.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/thirtythree.png" alt="Screenshot">
+</div>
+<br />
+
 ### Clone custom inverter standard cell design from github repository
 
 ```bash
@@ -1291,6 +1317,7 @@ ls -ltr
 # Open custom inverter layout in magic
 magic -T sky130A.tech sky130_inv.mag &
 ```
+
 <div align="center">
   <img src="assets/thirtyfour.png" alt="Screenshot">
 </div>

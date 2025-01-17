@@ -1472,6 +1472,66 @@ This 16-mask process provides a comprehensive framework for fabricating CMOS int
   <img src="assets/cmosfab15.png" alt="CMOSFab15">
 </div>
 
+<div align="center">
+  <img src="assets/cmosfab16.png" alt="CMOSFab16">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab17.png" alt="CMOSFab17">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab18.png" alt="CMOSFab18">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab19.png" alt="CMOSFab19">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab20.png" alt="CMOSFab20">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab21.png" alt="CMOSFab21">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab22.png" alt="CMOSFab22">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab23.png" alt="CMOSFab23">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab24.png" alt="CMOSFab24">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab25.png" alt="CMOSFab25">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab26.png" alt="CMOSFab26">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab27.png" alt="CMOSFab27">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab28.png" alt="CMOSFab28">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab29.png" alt="CMOSFab29">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab30.png" alt="CMOSFab30">
+</div>
+
 </details>
 
 ---

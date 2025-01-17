@@ -1357,10 +1357,120 @@ magic -T sky130A.tech sky130_inv.mag &
 <details>
 <summary> 
 
-## Inception of Layout & CMOS fabrication process
+## Inception of Layout & 16 Mask CMOS fabrication process
 </summary>
 
+The **16-mask CMOS process** is a sequence of photolithographic steps used in semiconductor fabrication to create CMOS (Complementary Metal-Oxide-Semiconductor) integrated circuits. Each mask in the process defines specific regions on the silicon wafer for doping, etching, or material deposition. Kunal Ghosh from VLSI System Design (VSD) provides a detailed breakdown of this process. Below is a summarized point-wise explanation based on his insights:
 
+1. **Active Region Definition (Mask 1):**
+   - The first mask is used to define the active regions where the pMOS and nMOS transistors will be formed. An opaque plate blocks UV light in certain areas during photolithography, allowing selective exposure of the photoresist. The exposed resist is then developed, and the underlying silicon nitride (Si₃N₄) is etched away in these regions. 
+
+2. **Isolation Oxide Formation:**
+   - Active regions are isolated from each other using a thick field oxide layer grown through the Local Oxidation of Silicon (LOCOS) technique. This isolation prevents electrical interference between adjacent transistors. 
+
+3. **Well Formation (Masks 2 and 3):**
+   - **N-Well Formation (Mask 2):** A mask defines regions for n-well creation in a p-type substrate. N-type dopants are introduced into these areas to form the n-wells where pMOS transistors will reside.
+   - **P-Well Formation (Mask 3):** Similarly, another mask defines p-well regions in an n-type substrate (if a twin-well process is used). P-type dopants are introduced to form p-wells for nMOS transistors. 
+
+4. **Threshold Voltage Adjustment (Masks 4 and 5):**
+   - **P-Well Doping (Mask 4):** A mask is used to block the n-well regions, allowing p-type impurities (e.g., boron) to be implanted into the p-well regions to adjust the threshold voltage of nMOS transistors.
+   - **N-Well Doping (Mask 5):** Conversely, another mask blocks the p-well regions, enabling n-type impurities (e.g., arsenic) to be implanted into the n-well regions to adjust the threshold voltage of pMOS transistors. 
+
+5. **Gate Oxide Formation:**
+   - The existing oxide layer, having undergone multiple processes, is stripped off using hydrofluoric (HF) acid. A high-quality gate oxide layer is then regrown to ensure optimal performance of the gate terminal. 
+
+6. **Gate Electrode Formation (Mask 6):**
+   - A layer of polysilicon is deposited over the wafer. Using Mask 6, the polysilicon is patterned to form the gate electrodes for both pMOS and nMOS transistors.
+
+7. **Lightly Doped Drain (LDD) Implantation (Masks 7 and 8):**
+   - **N-LDD Implantation (Mask 7):** A mask is used to define regions for lightly doped n-type source and drain extensions in nMOS transistors.
+   - **P-LDD Implantation (Mask 8):** Another mask defines regions for lightly doped p-type source and drain extensions in pMOS transistors.
+
+8. **Sidewall Spacer Formation:**
+   - Dielectric sidewall spacers are formed on the sides of the polysilicon gates to facilitate subsequent source and drain implantations and to reduce short-channel effects.
+
+9. **Source/Drain Implantation (Masks 9 and 10):**
+   - **N+ Source/Drain Implantation (Mask 9):** A mask allows heavy n-type doping in the source and drain regions of nMOS transistors.
+   - **P+ Source/Drain Implantation (Mask 10):** Another mask permits heavy p-type doping in the source and drain regions of pMOS transistors.
+
+10. **Interlayer Dielectric Deposition:**
+    - A dielectric layer, such as silicon dioxide, is deposited over the wafer to insulate the transistors from the subsequent metal interconnect layers.
+
+11. **Contact Hole Formation (Mask 11):**
+    - Using Mask 11, contact holes are etched into the dielectric layer to expose the source, drain, and gate regions for electrical connections.
+
+12. **Metal Layer Deposition and Patterning (Masks 12 to 14):**
+    - **First Metal Layer Deposition and Patterning (Mask 12):** A metal layer (e.g., aluminum) is deposited and patterned to form the first level of interconnections.
+    - **Second Metal Layer Deposition and Patterning (Mask 13):** An insulating layer is added, followed by a second metal layer deposition and patterning for additional interconnections.
+    - **Third Metal Layer Deposition and Patterning (Mask 14):** If required, a third metal layer is added similarly for complex interconnections.
+
+13. **Passivation Layer Deposition (Mask 15):**
+    - A passivation layer, such as silicon nitride or polyimide, is deposited over the wafer to protect the integrated circuits from environmental contaminants and mechanical damage.
+
+14. **Bond Pad Opening (Mask 16):**
+    - The final mask is used to etch openings in the passivation layer, exposing the bond pads for wire bonding during packaging.
+
+This 16-mask process provides a comprehensive framework for fabricating CMOS integrated circuits, ensuring precise control over device characteristics and overall chip performance. 
+
+<div align="center">
+  <img src="assets/cmosfab1.png" alt="CMOSFab1">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab2.png" alt="CMOSFab2">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab3.png" alt="CMOSFab3">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab4.png" alt="CMOSFab4">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab5.png" alt="CMOSFab5">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab6.png" alt="CMOSFab6">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab7.png" alt="CMOSFab7">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab8.png" alt="CMOSFab8">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab9.png" alt="CMOSFab9">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab10.png" alt="CMOSFab10">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab11.png" alt="CMOSFab11">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab12.png" alt="CMOSFab12">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab13.png" alt="CMOSFab13">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab14.png" alt="CMOSFab14">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab15.png" alt="CMOSFab15">
+</div>
 
 </details>
 

@@ -1172,7 +1172,7 @@ Transition time for a falling edge is the time it takes for a signal to change f
 <details>
 <summary> 
 
-## CMOS inverter ngspice simulations
+## CMOS inverter ngspice theory
 </summary>
 
 <br />
@@ -1231,3 +1231,41 @@ Transition time for a falling edge is the time it takes for a signal to change f
 <div align="center">
   <img src="assets/spice14.png" alt="Spice14">
 </div>
+
+<div align="center">
+  <img src="assets/spice15.png" alt="Spice15">
+</div>
+
+<div align="center">
+  <img src="assets/spice16.png" alt="Spice16">
+</div>
+
+<div align="center">
+  <img src="assets/spice17.png" alt="Spice17">
+</div>
+
+<div align="center">
+  <img src="assets/spice18.png" alt="Spice18">
+</div>
+
+<div align="center">
+  <img src="assets/spice19.png" alt="Spice19">
+</div>
+
+<div align="center">
+  <img src="assets/spice20.png" alt="Spice20">
+</div>
+
+<div align="center">
+  <img src="assets/spice21.png" alt="Spice21">
+</div>
+
+</details>
+
+---
+
+<details>
+<summary> 
+
+## DAY 3 LAB - Design library cell using Magic Layout and ngspice characterization 
+</summary>

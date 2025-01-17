@@ -1166,3 +1166,68 @@ Transition time for a falling edge is the time it takes for a signal to change f
 </details>
 
 ---
+
+# Section 3 - Design library cell using Magic Layout and ngspice characterization
+
+<details>
+<summary> 
+
+## CMOS inverter ngspice simulations
+</summary>
+
+<br />
+<div align="center">
+  <img src="assets/spice1.png" alt="Spice1"> 
+</div>
+
+<div align="center">
+  <img src="assets/spice2.png" alt="Spice2">
+</div>
+
+<div align="center">
+  <img src="assets/spice3.png" alt="Spice3">
+</div>
+
+<div align="center">
+  <img src="assets/spice4.png" alt="Spice4">
+</div>
+
+<div align="center">
+  <img src="assets/spice5.png" alt="Spice5">
+</div>
+
+<div align="center">
+  <img src="assets/spice6.png" alt="Spice6">
+</div>
+
+<div align="center">
+  <img src="assets/spice7.png" alt="Spice7">
+</div>
+
+<div align="center">
+  <img src="assets/spice8.png" alt="Spice8">
+</div>
+
+<div align="center">
+  <img src="assets/spice9.png" alt="Spice9">
+</div>
+
+<div align="center">
+  <img src="assets/spice10.png" alt="Spice10">
+</div>
+
+<div align="center">
+  <img src="assets/spice11.png" alt="Spice11">
+</div>
+
+<div align="center">
+  <img src="assets/spice12.png" alt="Spice12">
+</div>
+
+<div align="center">
+  <img src="assets/spice13.png" alt="Spice13">
+</div>
+
+<div align="center">
+  <img src="assets/spice14.png" alt="Spice14">
+</div>

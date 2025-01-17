@@ -1269,3 +1269,25 @@ Transition time for a falling edge is the time it takes for a signal to change f
 
 ## DAY 3 LAB - Design library cell using Magic Layout and ngspice characterization 
 </summary>
+
+Clone custom inverter standard cell design from github repository
+
+```bash
+# Change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Clone the repository with custom inverter design
+git clone https://github.com/nickson-jose/vsdstdcelldesign
+
+# Change into repository directory
+cd vsdstdcelldesign
+
+# Copy magic tech file to the repo directory for easy access
+cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .
+
+# Check contents to ensure file is present
+ls -ltr
+
+# Open custom inverter layout in magic
+magic -T sky130A.tech sky130_inv.mag &
+```

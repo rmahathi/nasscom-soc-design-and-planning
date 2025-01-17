@@ -1273,7 +1273,13 @@ Transition time for a falling edge is the time it takes for a signal to change f
 ### Using the IO placer to change the distance between tap cells
 
 ```bash
-set env(FP_IO_MODE) 2
+
+# Set IO mode to 2 (unequally spaced pins)
+set ::env(FP_IO_MODE) 2
+
+# Execute floorplanning again
+run_floorplan
+
 ```
 
 <div align="center">

@@ -1742,4 +1742,35 @@ Created spice file
   <img src="assets/fortyfive.png" alt="Screenshot">
 </div>
 
-### 
+###  Editing the spice model file for analysis through simulation
+
+Measuring unit distance in layout grid
+
+<div align="center">
+  <img src="assets/fortysix.png" alt="Screenshot">
+</div>
+
+Final edited spice file ready for ngspice simulation
+
+<div align="center">
+  <img src="assets/fortyseven.png" alt="Screenshot">
+</div>
+
+### Post-layout ngspice simulations
+Commands for ngspice simulation
+
+```bash
+# Command to directly load spice file for simulation to ngspice
+ngspice sky130_inv.spice
+
+#Command to Plot the graph
+plot y vs time a
+```
+
+<div align="center">
+  <img src="assets/fortyeight.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/fortynine.png" alt="Screenshot">
+</div>

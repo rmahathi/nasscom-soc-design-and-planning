@@ -1753,6 +1753,7 @@ Measuring unit distance in layout grid
 Final edited spice file ready for ngspice simulation
 
 ```tcl
+
 * SPICE3 file created from sky130_inv.ext - technology: sky130A
 
 .option scale=0.01u
@@ -1792,6 +1793,7 @@ C5 VPWR VGND 0.781fF
 run
 .endc
 .end
+
 ```
 
 <div align="center">
@@ -1816,3 +1818,15 @@ plot y vs time a
 <div align="center">
   <img src="assets/fortynine.png" alt="Screenshot">
 </div>
+
+Rise transition time calculation
+
+```math
+Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ taken\ for\ output\ to\ rise\ to\ 20\%
+```
+```math
+20\%\ of\ output = 660\ mV
+```
+```math
+80\%\ of\ output = 2.64\ V
+```

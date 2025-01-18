@@ -2105,3 +2105,83 @@ Re-Run the Commands in tkcon window to view magic window with rule implemented
   <img src="assets/seventysix.png" alt="Screenshot">
 </div>
 <br />
+
+## Incorrectly implemented nwell.4 complex rule correction
+
+Nwell rules
+
+<div align="center">
+  <img src="assets/eightyone.png" alt="Screenshot">
+</div>
+<br />
+
+Incorrectly implemented nwell.4 rule no drc violation even though no tap present in nwell
+
+<div align="center">
+  <img src="assets/eightytwo.png" alt="Screenshot">
+</div>
+<br />
+
+New commands inserted in sky130A.tech file to update drc
+
+<div align="center">
+  <img src="assets/eightythree.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/eightyfour.png" alt="Screenshot">
+</div>
+<br />
+
+Run the Commands in tkcon window to view magic window with rule implemented
+
+```tcl
+# Loading updated tech file
+tech load sky130A.tech
+
+# Change drc style to drc full
+drc style drc(full)
+
+# Must re-run drc check to see updated drc errors
+drc check
+
+# Selecting region displaying the new errors and getting the error messages 
+drc why
+```
+
+<div align="center">
+  <img src="assets/eightyfive.png" alt="Screenshot">
+</div>
+<br />
+
+##  Lab challenge to find missing or incorrect rules and fix them
+## Incorrectly implemented difftap.2 rule correction
+
+Difftap rules
+
+<div align="center">
+  <img src="assets/seventyseven.png" alt="Screenshot">
+</div>
+<br />
+
+Incorrectly implemented difftap.2 rule no drc violation even though spacing < 0.42u
+
+<div align="center">
+  <img src="assets/seventyeight.png" alt="Screenshot">
+</div>
+<br />
+
+New commands inserted in sky130A.tech file to update drc
+
+<div align="center">
+  <img src="assets/seventynine.png" alt="Screenshot">
+</div>
+<br />
+
+Re-Run the Commands in tkcon window to view magic window with rule implemented
+
+<div align="center">
+  <img src="assets/eighty.png" alt="Screenshot">
+</div>
+<br />

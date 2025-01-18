@@ -1998,6 +1998,30 @@ magic -d XR &
 <div align="center">
   <img src="assets/sixtyfour.png" alt="Screenshot">
 </div>
+<br />
+
+## Lab Introduction to Magic and steps to load Sky130 tech-rules
+
+Use the command magic -d XR to open the Magic tool
+
+<div align="center">
+  <img src="assets/sixtyfive.png" alt="Screenshot">
+</div>
+<br />
+
+Now, select an area in the gui and guide the pointer on to the m3contact layer and press P. The selected region will be filled with m3conact.
+
+<div align="center">
+  <img src="assets/sixtysix.png" alt="Screenshot">
+</div>
+<br />
+
+Now in tkcon terminal type the command cif see VIA2 , The metal 3 filled area will be filled VIA2 mask.
+
+<div align="center">
+  <img src="assets/sixtyseven.png" alt="Screenshot">
+</div>
+<br />
 
 ## Incorrectly implemented poly.9 simple rule correction
 
@@ -2005,4 +2029,79 @@ Poly Rules
 <div align="center">
   <img src="assets/polyrules.png" alt="Screenshot">
 </div>
+<br />
 
+Load the poly.9 file into the magic tool by using the command load poly.mag in tkcon terminal.
+
+<div align="center">
+  <img src="assets/sixtyeight.png" alt="Screenshot">
+</div>
+<br />
+
+Check for the spacing between Poly resistor and poly in the layout and compare it with the actual value in the Skywater website. In the image below we can clearly see the error in spacing between them.
+
+<div align="center">
+  <img src="assets/sixtynine.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/seventy.png" alt="Screenshot">
+</div>
+<br />
+
+New commands inserted in sky130A.tech file to update drc
+
+<div align="center">
+  <img src="assets/seventyone.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/seventytwo.png" alt="Screenshot">
+</div>
+<br />
+
+Commands to run in tkcon window
+
+```tcl
+# Loading updated tech file
+tech load sky130A.tech
+
+# Must re-run drc check to see updated drc errors
+drc check
+
+# Selecting region displaying the new errors and getting the error messages 
+drc why
+```
+
+Screenshot of magic window with rule implemented
+
+<div align="center">
+  <img src="assets/seventythree.png" alt="Screenshot">
+</div>
+<br />
+
+To copy multiple cells and paste it, select the cells using "shift+s" and then draw a box around the selected cells. 
+
+To paste it, go to the lower left corner of the area you want to place it in and click "c".
+
+Build a ndiffusion layer on the bottom and psubstratepdiff on the top of one set of cells using "p" to fill the layer.
+
+Build a pdiffusion layer on the bottom and nsubstratendiff on the top the other set of cells using "p" to fill the layer. Then select the cells with the layers to form a box around it and fill it with nwell using "p".
+
+<div align="center">
+  <img src="assets/seventyfour.png" alt="Screenshot">
+</div>
+<br />
+Commands inserted in sky130A.tech file to update drc
+
+<div align="center">
+  <img src="assets/seventyfive.png" alt="Screenshot">
+</div>
+<br />
+
+Re-Run the Commands in tkcon window to view magic window with rule implemented
+
+<div align="center">
+  <img src="assets/seventysix.png" alt="Screenshot">
+</div>
+<br />

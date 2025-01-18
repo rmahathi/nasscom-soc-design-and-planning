@@ -1532,6 +1532,146 @@ This 16-mask process provides a comprehensive framework for fabricating CMOS int
   <img src="assets/cmosfab30.png" alt="CMOSFab30">
 </div>
 
+<div align="center">
+  <img src="assets/cmosfab31.png" alt="CMOSFab31">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab32.png" alt="CMOSFab32">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab33.png" alt="CMOSFab33">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab34.png" alt="CMOSFab34">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab35.png" alt="CMOSFab35">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab36.png" alt="CMOSFab36">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab37.png" alt="CMOSFab37">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab38.png" alt="CMOSFab38">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab39.png" alt="CMOSFab39">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab40.png" alt="CMOSFab40">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab41.png" alt="CMOSFab41">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab42.png" alt="CMOSFab42">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab43.png" alt="CMOSFab43">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab44.png" alt="CMOSFab44">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab45.png" alt="CMOSFab45">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab46.png" alt="CMOSFab46">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab47.png" alt="CMOSFab47">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab48.png" alt="CMOSFab48">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab49.png" alt="CMOSFab49">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab50.png" alt="CMOSFab50">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab51.png" alt="CMOSFab51">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab52.png" alt="CMOSFab52">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab53.png" alt="CMOSFab53">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab54.png" alt="CMOSFab54">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab55.png" alt="CMOSFab55">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab56.png" alt="CMOSFab56">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab57.png" alt="CMOSFab57">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab58.png" alt="CMOSFab58">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab59.png" alt="CMOSFab59">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab60.png" alt="CMOSFab60">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab61.png" alt="CMOSFab61">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab62.png" alt="CMOSFab62">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab63.png" alt="CMOSFab63">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab64.png" alt="CMOSFab64">
+</div>
+
+<div align="center">
+  <img src="assets/cmosfab65.png" alt="CMOSFab65">
+</div>
+
 </details>
 
 ---

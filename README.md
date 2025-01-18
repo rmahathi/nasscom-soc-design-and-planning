@@ -1679,7 +1679,7 @@ This 16-mask process provides a comprehensive framework for fabricating CMOS int
 <details>
 <summary> 
 
-## DAY 3 LAB - Continued
+## DAY 3 LAB - NGSPICE Simultions
 </summary>
 
 ### Load the custom inverter layout in magic and explore
@@ -1952,7 +1952,15 @@ Fall\ Cell\ Delay = Time\ taken\ for\ output\ to\ fall\ to\ 50\% - Time\ taken\ 
 Fall\ Cell\ Delay = 4.08246 - 4.05 = 0.03246\ ns = 32.46\ ps
 ```
 
-### Lab Challenges to find DRC errors and fix them
+</details>
+
+--- 
+
+<details>
+<summary> 
+
+## DAY 3 LAB - Lab Challenges to find DRC errors and fix them
+</summary>
 
 For help, look into http://opencircuitdesign.com/magic/
 

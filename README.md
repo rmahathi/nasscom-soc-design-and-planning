@@ -1675,3 +1675,71 @@ This 16-mask process provides a comprehensive framework for fabricating CMOS int
 </details>
 
 ---
+
+<details>
+<summary> 
+
+## DAY 3 LAB - Continued
+</summary>
+
+### Load the custom inverter layout in magic and explore
+
+Identifying NMOS and PMOS 
+
+<div align="center">
+  <img src="assets/thirtyeight.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/thirtynine.png" alt="Screenshot">
+</div>
+
+Output Y connectivity to PMOS and NMOS drain verified
+
+<div align="center">
+  <img src="assets/forty.png" alt="Screenshot">
+</div>
+
+PMOS source connectivity to VDD (here VPWR) verified
+
+<div align="center">
+  <img src="assets/fortyone.png" alt="Screenshot">
+</div>
+
+NMOS source connectivity to VSS (here VGND) verified
+
+<div align="center">
+  <img src="assets/fortytwo.png" alt="Screenshot">
+</div>
+
+###  Spice extraction of inverter in magic
+
+```tcl
+# Check current directory
+pwd
+
+# Extraction command to extract to .ext format
+extract all
+
+# Before converting ext to spice this command enables the parasitic extraction 
+ext2spice cthresh 0 rthresh 0
+
+# Converting to ext to spice
+ext2spice
+```
+
+<div align="center">
+  <img src="assets/fortythree.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/fortyfour.png" alt="Screenshot">
+</div>
+
+Created spice file
+
+<div align="center">
+  <img src="assets/fortyfive.png" alt="Screenshot">
+</div>
+
+### 

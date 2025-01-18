@@ -1999,3 +1999,10 @@ magic -d XR &
   <img src="assets/sixtyfour.png" alt="Screenshot">
 </div>
 
+## Incorrectly implemented poly.9 simple rule correction
+
+Poly Rules
+<div align="center">
+  <img src="assets/polyrules.png" alt="Screenshot">
+</div>
+

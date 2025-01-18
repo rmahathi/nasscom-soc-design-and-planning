@@ -1753,7 +1753,45 @@ Measuring unit distance in layout grid
 Final edited spice file ready for ngspice simulation
 
 ```tcl
+* SPICE3 file created from sky130_inv.ext - technology: sky130A
 
+.option scale=0.01u
+
+* Including our custom pmos nmos files
+
+.include ./libs/pshort.lib
+.include ./libs/nshort.lib
+
+//.subckt sky130_inv A Y VPWR VGND
+
+M1000 Y A VPWR VPWR pshort_model.0 w=37 l=23
+* ad=1.44n pd=0.152m as=1.52n ps=0.156m
+M1001 Y A VGND VGND nshort_model.0 w=35 l=23
+* ad=1.44n pd=0.152m as=1.37n ps=0.148m  
+
+* Adding VDD & VSS for simulation
+VDD VPWR 0 3.3V
+VSS VGND 0 0V
+
+*Adding load capacitance to remove spikes in output
+C6 Y 0 2fF
+
+* Defining Input Pulse
+Va A VGND PULSE (0V 3.3V 0 0.1ns 0.1ns 2ns 4ns)
+C0 A VPWR 0.0774fF
+C1 Y  VPWR 0.117fF
+C2 A Y 0.0754fF
+C3 Y VGND 0.279fF
+C4 A VGND 0.45fF
+C5 VPWR VGND 0.781fF
+//.ends
+
+* Specifying the type of analysis to be performed 
+.tran 1n 20n
+.control
+run
+.endc
+.end
 ```
 
 <div align="center">

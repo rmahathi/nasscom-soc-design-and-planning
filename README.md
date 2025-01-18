@@ -2186,3 +2186,15 @@ Re-Run the Commands in tkcon window to view magic window with rule implemented
   <img src="assets/eighty.png" alt="Screenshot">
 </div>
 <br />
+
+</details>
+
+---
+
+# Section 4 - Pre-layout timing analysis and importance of good clock tree
+
+<details>
+<summary> 
+
+## XYZ
+</summary>

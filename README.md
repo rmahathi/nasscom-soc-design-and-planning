@@ -1752,6 +1752,10 @@ Measuring unit distance in layout grid
 
 Final edited spice file ready for ngspice simulation
 
+```tcl
+
+```
+
 <div align="center">
   <img src="assets/fortyseven.png" alt="Screenshot">
 </div>

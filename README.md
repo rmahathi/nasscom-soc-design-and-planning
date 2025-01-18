@@ -1952,7 +1952,7 @@ Fall\ Cell\ Delay = Time\ taken\ for\ output\ to\ fall\ to\ 50\% - Time\ taken\ 
 Fall\ Cell\ Delay = 4.08246 - 4.05 = 0.03246\ ns = 32.46\ ps
 ```
 
-## Lab Challenges to find DRC errors and fix them
+### Lab Challenges to find DRC errors and fix them
 
 For help, look into http://opencircuitdesign.com/magic/
 
@@ -2000,7 +2000,7 @@ magic -d XR &
 </div>
 <br />
 
-## Lab Introduction to Magic and steps to load Sky130 tech-rules
+### Lab Introduction to Magic and steps to load Sky130 tech-rules
 
 Use the command magic -d XR to open the Magic tool
 
@@ -2023,7 +2023,7 @@ Now in tkcon terminal type the command cif see VIA2 , The metal 3 filled area wi
 </div>
 <br />
 
-## Incorrectly implemented poly.9 simple rule correction
+### Incorrectly implemented poly.9 simple rule correction
 
 Poly Rules
 <div align="center">
@@ -2106,7 +2106,7 @@ Re-Run the Commands in tkcon window to view magic window with rule implemented
 </div>
 <br />
 
-## Incorrectly implemented nwell.4 complex rule correction
+### Incorrectly implemented nwell.4 complex rule correction
 
 Nwell rules
 
@@ -2155,8 +2155,9 @@ drc why
 </div>
 <br />
 
-##  Lab challenge to find missing or incorrect rules and fix them
-## Incorrectly implemented difftap.2 rule correction
+### Lab challenge to find missing or incorrect rules and fix them
+
+### Incorrectly implemented difftap.2 rule correction
 
 Difftap rules
 

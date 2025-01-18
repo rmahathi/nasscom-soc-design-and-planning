@@ -1831,6 +1831,7 @@ Reduce the spikes by decreasing c-load from C3 Y VGND 0.279fF to 1fF
 
 #### Rise transition time calculation
 <br />
+
 ```math
 Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ taken\ for\ output\ to\ rise\ to\ 20\%
 ```
@@ -1840,6 +1841,7 @@ Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ ta
 ```math
 80\%\ of\ output = 2.64\ V
 ```
+<br />
 
 20% value
 <div align="center">
@@ -1854,6 +1856,8 @@ Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ ta
 <div align="center">
   <img src="assets/fiftythree.png" alt="Screenshot">
 </div>
+
+<br />
 
 ```math
 Rise\ transition\ time = 2.2668- 2.18776 = 0.07904\ ns = 79.04\ ps
@@ -1872,6 +1876,7 @@ Fall\ transition\ time = Time\ taken\ for\ output\ to\ fall\ to\ 20\% - Time\ ta
 ```math
 80\%\ of\ output = 2.64\ V
 ```
+<br />
 
 20% value
 <div align="center">
@@ -1887,6 +1892,8 @@ Fall\ transition\ time = Time\ taken\ for\ output\ to\ fall\ to\ 20\% - Time\ ta
   <img src="assets/fiftyeight.png" alt="Screenshot">
 </div>
 
+<br />
+
 ```math
 Fall\ transition\ time = 4.1 - 4.05861 = 0.04139\ ns = 41.39\ ps
 ```
@@ -1901,6 +1908,7 @@ Rise\ Cell\ Delay = Time\ taken\ for\ output\ to\ rise\ to\ 50\% - Time\ taken\ 
 ```math
 50\%\ of\ 3.3\ V = 1.65\ V
 ```
+<br />
 
 50% value
 <div align="center">
@@ -1910,6 +1918,8 @@ Rise\ Cell\ Delay = Time\ taken\ for\ output\ to\ rise\ to\ 50\% - Time\ taken\ 
 <div align="center">
   <img src="assets/fiftyfive.png" alt="Screenshot">
 </div>
+
+<br />
 
 ```math
 Rise\ Cell\ Delay = 2.22076 - 2.14962 = 0.07114\ ns = 71.14\ ps
@@ -1925,6 +1935,7 @@ Fall\ Cell\ Delay = Time\ taken\ for\ output\ to\ fall\ to\ 50\% - Time\ taken\ 
 ```math
 50\%\ of\ 3.3\ V = 1.65\ V
 ```
+<br />
 
 50% value
 <div align="center">
@@ -1934,6 +1945,8 @@ Fall\ Cell\ Delay = Time\ taken\ for\ output\ to\ fall\ to\ 50\% - Time\ taken\ 
 <div align="center">
   <img src="assets/sixty.png" alt="Screenshot">
 </div>
+
+<br />
 
 ```math
 Fall\ Cell\ Delay = 4.08246 - 4.05 = 0.03246\ ns = 32.46\ ps

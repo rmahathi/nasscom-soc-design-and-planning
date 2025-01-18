@@ -1819,12 +1819,15 @@ plot y vs time a
   <img src="assets/fortynine.png" alt="Screenshot">
 </div>
 
+<br />
+
 Reduce the spikes by decreasing c-load from C3 Y VGND 0.279fF to 1fF
 
 <div align="center">
   <img src="assets/fifty.png" alt="Screenshot">
 </div>
 
+<br />
 Rise transition time calculation
 
 ```math

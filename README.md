@@ -2617,8 +2617,6 @@ place_io
 
 tap_decap_or
 
-run_floorplan
-
 run_power_grid_generation
 ```
 
@@ -3239,8 +3237,12 @@ run_synthesis
 
 # Follwing commands are alltogather sourced in "run_floorplan" command
 init_floorplan
+
 place_io
+
 tap_decap_or
+
+run_power_grid_generation
 
 # Now we are ready to run placement
 run_placement

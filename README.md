@@ -2204,5 +2204,32 @@ Re-Run the Commands in tkcon window to view magic window with rule implemented
 <details>
 <summary> 
 
-## XYZ
+## DAY 4 LAB - Timing modelling using delay tables
 </summary>
+
+### Fix up small DRC errors and verify the design is ready to be inserted into our flow
+
+Pre-requisites to creating a LEF file. Make sure you have these specifications met, before you proceed:-
+
+- Condition 1: The input and output ports of the standard cell should lie on the intersection of the vertical and horizontal tracks.
+- Condition 2: Width of the standard cell should be odd multiples of the horizontal track pitch.
+- Condition 3: Height of the standard cell should be even multiples of the vertical track pitch.
+
+Information regarding the pitch can be found in the sky130_fd_sc_hd file located deep in the pdks directory in a file called tracks.info.
+
+ADD SS 
+
+Commands to open the custom inverter layout
+
+```bash
+# Change directory to vsdstdcelldesign
+cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+
+# Command to open custom inverter layout in magic
+magic -T sky130A.tech sky130_inv.mag &
+```
+
+
+</details>
+
+---

@@ -3254,6 +3254,45 @@ unset ::env(LIB_CTS)
 run_cts
 ```
 
+Screenshot of CTS configurations in  Desktop/work/tools/openlane_working_dir/openlane/configuration --> less README.md
+
+<div align="center">
+  <img src="assets/xsixty.png" alt="Screenshot">
+</div>
+<br />
+
+Screenshot of Commands 
+
+<div align="center">
+  <img src="assets/xsixtyone.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xsixtytwo.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xsixtythree.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xsixtyfour.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xsixtyfive.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xsixtysix.png" alt="Screenshot">
+</div>
+<br />
+
 </details>
 
 ---

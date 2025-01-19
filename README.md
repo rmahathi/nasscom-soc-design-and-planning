@@ -3664,24 +3664,19 @@ SS
 
 # Tools overview
 
-1. Yosys Synthesis Suite:
-
+<b>1. Yosys Synthesis Suite:</b>
 A versatile open-source tool used for hardware description language (HDL) synthesis. It converts RTL code (Verilog or VHDL) into a gate-level netlist for digital design implementation.
 
-2. OpenLANE RTL2GDS Digital Design Suite:
-
+<b>2. OpenLANE RTL2GDS Digital Design Suite:</b>
 An open-source end-to-end flow that converts RTL designs into GDSII layouts. It integrates various tools for synthesis, placement, routing, and optimization, ensuring seamless ASIC design.
 
-3. NGSpice for Characterization:
-
+<b>3. NGSpice for Characterization:</b>
 A widely-used open-source circuit simulator for analog, digital, and mixed-signal simulations. It is instrumental in characterizing circuit behavior, ensuring accuracy in timing and power analysis.
 
-4. Magic for Layout and Floorplanning:
-
+<b>4. Magic for Layout and Floorplanning:</b>
 An open-source VLSI layout editor that supports custom cell design, floorplanning, and visualization of design rule checks (DRC) and layout-versus-schematic (LVS) results.
 
-5. OpenSTA for Static Timing Analysis:
-
+<b>5. OpenSTA for Static Timing Analysis:</b>
 A powerful open-source tool used to analyze and verify the timing performance of digital circuits. It ensures that the design meets setup and hold time constraints.
 
 # Certificate of Completion

@@ -2294,6 +2294,16 @@ Height\ of\ standard\ cell = 2.72\ um = 0.34 * 8
 
 ### Save the finalized layout with custom name and open it
 
+How to define a port? (Already done in the s/w)?
+For more information check https://github.com/nickson-jose/vsdstdcelldesign
+
+<br />
+<div align="center">
+  <img src="assets/ninetytwo.png" alt="Screenshot">
+</div>
+<br />
+
+
 
 </details>
 

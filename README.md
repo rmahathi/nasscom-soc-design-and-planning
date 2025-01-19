@@ -2217,7 +2217,15 @@ Pre-requisites to creating a LEF file. Make sure you have these specifications m
 
 Information regarding the pitch can be found in the sky130_fd_sc_hd file located deep in the pdks directory in a file called tracks.info.
 
-ADD SS 
+<div align="center">
+  <img src="assets/eightysix.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/eightyseven.png" alt="Screenshot">
+</div>
+<br />
 
 Commands to open the custom inverter layout
 

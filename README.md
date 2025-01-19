@@ -2482,11 +2482,6 @@ run_synthesis
 <br />
 
 <div align="center">
-  <img src="assets/del2.png" alt="Screenshot">
-</div>
-<br />
-
-<div align="center">
   <img src="assets/del3.png" alt="Screenshot">
 </div>
 <br />

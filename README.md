@@ -2765,7 +2765,7 @@ Abutment of power pins with other cell from library clearly visible
 <details>
 <summary> 
 
-## DAY 4 LAB - Timing modelling using delay tables continued
+## DAY 4 LAB - Timing analysis with ideal clocks using openSTA
 </summary>
 
 ### Do Post-Synthesis timing analysis with OpenSTA tool
@@ -3144,3 +3144,30 @@ Screenshot of replaced instance
 <br />
 
 *We started ECO fixes at wns -23.9000 and now we stand at wns -22.6173 we reduced around 1.2827 ns of violation*
+
+</details>
+
+---
+
+<details>
+<summary> 
+
+## Clock tree synthesis 
+</summary>
+
+
+</details>
+
+---
+
+<details>
+<summary> 
+
+## DAY 4 LAB - Clock tree synthesis TritonCTS and signal integrity
+</summary>
+
+
+</details>
+
+---
+

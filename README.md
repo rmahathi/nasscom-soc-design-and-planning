@@ -2996,7 +2996,7 @@ sta pre_sta.conf
 </div>
 <br />
 
-### Make timing ECO fixes to remove all violations.
+### Make timing ECO fixes to remove all violations
 
 OR gate of drive strength 2 is driving 4 fanouts
 

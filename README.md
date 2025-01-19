@@ -2599,14 +2599,41 @@ Now that our custom inverter is properly accepted in synthesis we can now run fl
 
 ```tcl
 # Now we can run floorplan
-init_floorplan
-place_io
-tap_decap_or
 run_floorplan
 ```
 
 <div align="center">
   <img src="assets/xfifteen.png" alt="Screenshot">
+</div>
+<br />
+
+Since we are facing unexpected un-explainable error while using `run_floorplan` command, we can instead use the following set of commands 
+
+```tcl
+# Now we can run floorplan
+init_floorplan
+
+place_io
+
+tap_decap_or
+
+run_floorplan
+
+run_power_grid_generation
+```
+
+<div align="center">
+  <img src="assets/xsixteen.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xseventeen.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xeighteen.png" alt="Screenshot">
 </div>
 <br />
 

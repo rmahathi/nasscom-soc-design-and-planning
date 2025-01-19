@@ -3464,7 +3464,6 @@ Screenshots of commands run and timing report generated
 <div align="center">
   <img src="assets/xseventyfive.png" alt="Screenshot">
 </div>
-<br />
 
 </details>
 

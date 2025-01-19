@@ -2643,6 +2643,15 @@ Now that floorplan is done we can do placement using following command
 # Now we are ready to run placement
 run_placement
 ```
+<div align="center">
+  <img src="assets/xnineteen.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xtwenty.png" alt="Screenshot">
+</div>
+<br />
 
 Commands to load placement def in magic in another terminal
 

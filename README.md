@@ -3508,7 +3508,7 @@ docker
 package require openlane 0.9
 
 # Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'
-prep -design picorv32a -tag 19-01_13-50
+prep -design picorv32a 
 
 # Addiitional commands to include newly added lef to openlane flow merged.lef
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
@@ -3543,13 +3543,20 @@ gen_pdn
 
 Screenshots of power distribution network run
 
-SS 
+<div align="center">
+  <img src="assets/xseventysix.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xseventyseven.png" alt="Screenshot">
+</div>
 
 Commands to load PDN def in magic in another terminal
 
 ```bash
 # Change directory to path containing generated PDN def
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/tmp/floorplan/
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/19-01_22-07/tmp/floorplan/
 
 # Command to load the PDN def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
@@ -3582,7 +3589,7 @@ Commands to load routed def in magic in another terminal
 
 ```bash
 # Change directory to path containing routed def
-cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/19-01_22-07/results/routing/
 
 # Command to load the routed def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
@@ -3592,7 +3599,7 @@ Screenshots of routed def
 
 SS 
 
-Screenshot of fast route guide present in `openlane/designs/picorv32a/runs/26-03_08-45/tmp/routing` directory
+Screenshot of fast route guide present in `openlane/designs/picorv32a/runs/19-01_22-07/tmp/routing` directory
 
 SS 
 
@@ -3605,7 +3612,7 @@ Commands for SPEF extraction using external tool
 cd Desktop/work/tools/SPEF_EXTRACTOR
 
 # Command extract spef
-python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.def
+python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/19-01_22-07/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.def
 ```
 
 ### Post-Route OpenSTA timing analysis with the extracted parasitics of the route
@@ -3617,10 +3624,10 @@ Commands to be run in OpenLANE flow to do OpenROAD timing analysis with integrat
 openroad
 
 # Reading lef file
-read_lef /openLANE_flow/designs/picorv32a/runs/19-01_13-50/tmp/merged.lef
+read_lef /openLANE_flow/designs/picorv32a/runs/19-01_22-07/tmp/merged.lef
 
 # Reading def file
-read_def /openLANE_flow/designs/picorv32a/runs/19-01_13-50/results/routing/picorv32a.def
+read_def /openLANE_flow/designs/picorv32a/runs/19-01_22-07/results/routing/picorv32a.def
 
 # Creating an OpenROAD database to work with
 write_db pico_route.db
@@ -3629,7 +3636,7 @@ write_db pico_route.db
 read_db pico_route.db
 
 # Read netlist post CTS
-read_verilog /openLANE_flow/designs/picorv32a/runs/19-01_13-50/results/synthesis/picorv32a.synthesis_preroute.v
+read_verilog /openLANE_flow/designs/picorv32a/runs/19-01_22-07/results/synthesis/picorv32a.synthesis_preroute.v
 
 # Read library for design
 read_liberty $::env(LIB_SYNTH_COMPLETE)
@@ -3644,7 +3651,7 @@ read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
 set_propagated_clock [all_clocks]
 
 # Read SPEF
-read_spef /openLANE_flow/designs/picorv32a/runs/19-01_13-50/results/routing/picorv32a.spef
+read_spef /openLANE_flow/designs/picorv32a/runs/19-01_22-07/results/routing/picorv32a.spef
 
 # Generating custom timing report
 report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4

@@ -2252,7 +2252,43 @@ grid 0.46um 0.34um 0.23um 0.17um
 </div>
 <br />
 
-Screenshot of commands run
+Condition 1 verified
+
+<div align="center">
+  <img src="assets/eightynine.png" alt="Screenshot">
+</div>
+<br />
+
+Condition 2 verified
+
+```math
+Horizontal\ track\ pitch = 0.46\ um
+```
+
+<div align="center">
+  <img src="assets/ninety.png" alt="Screenshot">
+</div>
+<br />
+
+```math
+Width\ of\ standard\ cell = 1.38\ um = 0.46 * 3
+```
+
+Condition 3 verified
+
+```math
+Vertical\ track\ pitch = 0.34\ um
+```
+
+<div align="center">
+  <img src="assets/ninetyone.png" alt="Screenshot">
+</div>
+<br />
+
+
+```math
+Height\ of\ standard\ cell = 2.72\ um = 0.34 * 8
+```
 
 
 </details>

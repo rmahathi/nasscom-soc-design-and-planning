@@ -2705,3 +2705,65 @@ Abutment of power pins with other cell from library clearly visible
 
 ## Setup Timing Analysis
 </summary>
+
+<div align="center">
+  <img src="assets/seta1.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta2.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta3.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta4.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta5.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta6.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta7.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta8.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta9.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta10.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta11.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta12.png" alt="SetupTimingAnalysis">
+</div>
+
+<div align="center">
+  <img src="assets/seta13.png" alt="SetupTimingAnalysis">
+</div>
+
+</details>
+
+---
+
+<details>
+<summary> 
+
+## DAY 4 LAB - Timing modelling using delay tables continued
+</summary>

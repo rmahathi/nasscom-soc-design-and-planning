@@ -3660,3 +3660,37 @@ SS
 </details>
 
 ---
+
+
+# Tools overview
+
+1. Yosys Synthesis Suite:
+A versatile open-source tool used for hardware description language (HDL) synthesis. It converts RTL code (Verilog or VHDL) into a gate-level netlist for digital design implementation.
+
+2. OpenLANE RTL2GDS Digital Design Suite:
+An open-source end-to-end flow that converts RTL designs into GDSII layouts. It integrates various tools for synthesis, placement, routing, and optimization, ensuring seamless ASIC design.
+
+3. NGSpice for Characterization:
+A widely-used open-source circuit simulator for analog, digital, and mixed-signal simulations. It is instrumental in characterizing circuit behavior, ensuring accuracy in timing and power analysis.
+
+4. Magic for Layout and Floorplanning:
+An open-source VLSI layout editor that supports custom cell design, floorplanning, and visualization of design rule checks (DRC) and layout-versus-schematic (LVS) results.
+
+5. OpenSTA for Static Timing Analysis:
+A powerful open-source tool used to analyze and verify the timing performance of digital circuits. It ensures that the design meets setup and hold time constraints.
+
+# Certificate of Completion
+
+
+# Acknowledgements
+1. [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
+2. [Nickson P Jose](https://github.com/nickson-jose), Physical Design Engineer, Intel Corporation.
+3. [R. Timothy Edwards](https://github.com/RTimothyEdwards), Senior Vice President of Analog and Design, efabless Corporation.
+
+# References
+1. https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd
+2. https://github.com/nickson-jose/vsdstdcelldesign
+
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rmahathi/)

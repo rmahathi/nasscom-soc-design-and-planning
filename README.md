@@ -2265,6 +2265,7 @@ Condition 2 verified
 Horizontal\ track\ pitch = 0.46\ um
 ```
 
+<br />
 <div align="center">
   <img src="assets/ninety.png" alt="Screenshot">
 </div>
@@ -2280,6 +2281,7 @@ Condition 3 verified
 Vertical\ track\ pitch = 0.34\ um
 ```
 
+<br />
 <div align="center">
   <img src="assets/ninetyone.png" alt="Screenshot">
 </div>

@@ -2768,7 +2768,7 @@ Abutment of power pins with other cell from library clearly visible
 ## DAY 4 LAB - Timing modelling using delay tables continued
 </summary>
 
-#### 9. Do Post-Synthesis timing analysis with OpenSTA tool.
+### Do Post-Synthesis timing analysis with OpenSTA tool
 
 Since we are having 0 wns after improved timing run we are going to do timing analysis on initial run of synthesis which has lots of violations and no parameters were added to improve timing
 

@@ -2294,16 +2294,97 @@ Height\ of\ standard\ cell = 2.72\ um = 0.34 * 8
 
 ### Save the finalized layout with custom name and open it
 
-How to define a port? (Already done in the s/w)?
-For more information check https://github.com/nickson-jose/vsdstdcelldesign
+How to define a port? (Already done in the s/w)
 
 <br />
 <div align="center">
   <img src="assets/ninetytwo.png" alt="Screenshot">
 </div>
 <br />
+For more information check https://github.com/nickson-jose/vsdstdcelldesign
 
+<br />
 
+Command for tkcon window to save the layout with custom name
+
+```tcl
+# Command to save as
+save sky130_vsdinv.mag
+```
+<br />
+<div align="center">
+  <img src="assets/ninetythree.png" alt="Screenshot">
+</div>
+<br />
+
+Command to open the newly saved layout
+
+```bash
+# Command to open custom inverter layout in magic
+magic -T sky130A.tech sky130_vsdinv.mag &
+```
+
+<br />
+<div align="center">
+  <img src="assets/ninetyfour.png" alt="Screenshot">
+</div>
+<br />
+
+### Generate lef from the layout
+
+Command for tkcon window to write lef
+
+```tcl
+# lef command
+lef write
+
+#open lef file in Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+less sky130_vsdinv.lef
+```
+
+<br />
+<div align="center">
+  <img src="assets/ninetyfive.png" alt="Screenshot">
+</div>
+<br />
+
+<br />
+<div align="center">
+  <img src="assets/ninetysix.png" alt="Screenshot">
+</div>
+<br />
+
+Screenshot of newly created lef file
+
+<br />
+<div align="center">
+  <img src="assets/ninetyseven.png" alt="Screenshot">
+</div>
+<br />
+
+<br />
+<div align="center">
+  <img src="assets/ninetyeight.png" alt="Screenshot">
+</div>
+<br />
+
+### Copy the newly generated lef and associated required lib files to 'picorv32a' design 'src' directory.
+
+Commands to copy necessary files to 'picorv32a' design 'src' directory
+
+```bash
+# Copy lef file
+cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+
+# List and check whether it's copied
+ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+
+# Copy lib files
+cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+
+# List and check whether it's copied
+ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+```
 
 </details>
 

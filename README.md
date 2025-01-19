@@ -3000,7 +3000,10 @@ sta pre_sta.conf
 
 OR gate of drive strength 2 is driving 4 fanouts
 
-SS
+<div align="center">
+  <img src="assets/xfortyfour.png" alt="Screenshot">
+</div>
+<br />
 
 Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
 
@@ -3020,11 +3023,22 @@ report_checks -fields {net cap slew input_pins} -digits 4
 
 Result - slack reduced
 
-SS
+<div align="center">
+  <img src="assets/xfortyfive.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xfortysix.png" alt="Screenshot">
+</div>
+<br />
 
 OR gate of drive strength 2 is driving 4 fanouts
 
-SS
+<div align="center">
+  <img src="assets/xfortyseven.png" alt="Screenshot">
+</div>
+<br />
 
 Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
 
@@ -3041,11 +3055,22 @@ report_checks -fields {net cap slew input_pins} -digits 4
 
 Result - slack reduced
 
-SS  
+<div align="center">
+  <img src="assets/xfortyeight.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xfortynine.png" alt="Screenshot">
+</div>
+<br />
 
 OR gate of drive strength 2 driving OA gate has more delay
 
-SS 
+<div align="center">
+  <img src="assets/xfifty.png" alt="Screenshot">
+</div>
+<br />
 
 Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
 
@@ -3062,11 +3087,22 @@ report_checks -fields {net cap slew input_pins} -digits 4
 
 Result - slack reduced
 
-SS 
+<div align="center">
+  <img src="assets/xfiftyone.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xfiftytwo.png" alt="Screenshot">
+</div>
+<br />
 
 OR gate of drive strength 2 driving OA gate has more delay
 
-SS 
+<div align="center">
+  <img src="assets/xfiftythree.png" alt="Screenshot">
+</div>
+<br />
 
 Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
 
@@ -3083,7 +3119,15 @@ report_checks -fields {net cap slew input_pins} -digits 4
 
 Result - slack reduced
 
-SS 
+<div align="center">
+  <img src="assets/xfiftyfour.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xfiftyfive.png" alt="Screenshot">
+</div>
+<br />
 
 Commands to verify instance `_14506_`  is replaced with `sky130_fd_sc_hd__or4_4`
 
@@ -3094,6 +3138,9 @@ report_checks -from _29043_ -to _30440_ -through _14506_
 
 Screenshot of replaced instance
 
-SS 
+<div align="center">
+  <img src="assets/xfiftysix.png" alt="Screenshot">
+</div>
+<br />
 
 *We started ECO fixes at wns -23.9000 and now we stand at wns -22.6173 we reduced around 1.2827 ns of violation*

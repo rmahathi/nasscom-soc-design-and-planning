@@ -2466,6 +2466,54 @@ run_synthesis
 </div>
 <br />
 
+### Remove/reduce the newly introduced violations with the introduction of custom inverter cell by modifying design parameters
+
+Noting down current design values generated before modifying parameters to improve timing
+
+<div align="center">
+  <img src="assets/xsix.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xseven.png" alt="Screenshot">
+</div>
+<br />
+
+Commands to view and change parameters to improve timing and run synthesis
+
+```tcl
+# Now once again we have to prep design so as to update variables
+prep -design picorv32a -tag 19-01_10-35 -overwrite
+
+# Addiitional commands to include newly added lef to openlane flow merged.lef
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+# Command to display current value of variable SYNTH_STRATEGY
+echo $::env(SYNTH_STRATEGY)
+
+# Command to set new value for SYNTH_STRATEGY
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+# Command to display current value of variable SYNTH_BUFFERING to check whether it's enabled
+echo $::env(SYNTH_BUFFERING)
+
+# Command to display current value of variable SYNTH_SIZING
+echo $::env(SYNTH_SIZING)
+
+# Command to set new value for SYNTH_SIZING
+set ::env(SYNTH_SIZING) 1
+
+# Command to display current value of variable SYNTH_DRIVING_CELL to check whether it's the proper cell or not
+echo $::env(SYNTH_DRIVING_CELL)
+
+# Now that the design is prepped and ready, we can run synthesis using following command
+run_synthesis
+```
+
+Screenshot of merged.lef in `tmp` directory with our custom inverter as macro
+
 
 </details>
 

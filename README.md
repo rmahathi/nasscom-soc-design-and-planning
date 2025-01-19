@@ -2946,6 +2946,11 @@ run_synthesis
 </div>
 <br />
 
+<div align="center">
+  <img src="assets/xthirtysix.png" alt="Screenshot">
+</div>
+<br />
+
 Commands to run STA in another terminal
 
 ```bash
@@ -2955,10 +2960,6 @@ cd Desktop/work/tools/openlane_working_dir/openlane
 # Command to invoke OpenSTA tool with script
 sta pre_sta.conf
 ```
-<div align="center">
-  <img src="assets/xthirtysix.png" alt="Screenshot">
-</div>
-<br />
 
 <div align="center">
   <img src="assets/xthirtyseven.png" alt="Screenshot">
@@ -2972,5 +2973,25 @@ sta pre_sta.conf
 
 <div align="center">
   <img src="assets/xthirtynine.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xforty.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xfortyone.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xfortytwo.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xfortythree.png" alt="Screenshot">
 </div>
 <br />

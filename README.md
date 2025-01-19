@@ -3644,6 +3644,10 @@ Screenshots of routed def
 </div>
 <br />
 
+<div align="center">
+  <img src="assets/picorv32a.png" alt="Screenshot">
+</div>
+
 Screenshot of fast route guide present in `openlane/designs/picorv32a/runs/19-01_22-07/tmp/routing` directory
 
 <div align="center">

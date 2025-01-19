@@ -2665,8 +2665,17 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 Screenshot of placement def in magic
 
+<div align="center">
+  <img src="assets/xtwentyone.png" alt="Screenshot">
+</div>
+<br />
 
 Screenshot of custom inverter inserted in placement def with proper abutment
+
+<div align="center">
+  <img src="assets/xtwentytwo.png" alt="Screenshot">
+</div>
+<br />
 
 Command for tkcon window to view internal layers of cells
 
@@ -2675,8 +2684,24 @@ Command for tkcon window to view internal layers of cells
 expand
 ```
 
+<div align="center">
+  <img src="assets/xtwentythree.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xtwentyfour.png" alt="Screenshot">
+</div>
+<br />
+
 Abutment of power pins with other cell from library clearly visible
 
 </details>
 
 ---
+
+<details>
+<summary> 
+
+## Setup Timing Analysis
+</summary>

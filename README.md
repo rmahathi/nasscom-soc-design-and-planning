@@ -2843,8 +2843,8 @@ set ::env(SYNTH_MAX_FANOUT) 6
 create_clock [get_ports $::env(CLOCK_PORT)] -name $::env(CLOCK_PORT) -period $::env(CLOCK_PERIOD)
 set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
 set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
-puts "[INFO]: Setting output delay to: $output_delay_value"
-puts "[INFO]: Setting input delay to: $input_delay_value"
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
 
 set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
 
@@ -2861,7 +2861,7 @@ set_output_delay $output_delay_value -clock [get_clocks $::env(CLOCK_PORT)] [all
 
 # TODO set this as parameter
 set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
-set_cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
 puts "\[INFO\]: Setting load to: $cap_load"
 set_load $cap_load [all_outputs]
 ```
@@ -2888,5 +2888,89 @@ sta pre_sta.conf
 
 <div align="center">
   <img src="assets/xtwentynine.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xthirty.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xthirtyone.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xthirtytwo.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xthirtythree.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xthirtyfour.png" alt="Screenshot">
+</div>
+<br />
+
+Since more fanout is causing more delay we can add parameter to reduce fanout and do synthesis again
+
+Commands to include new lef and perform synthesis 
+
+```tcl
+# Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'
+prep -design picorv32a -tag 19-01_13-50 -overwrite
+
+# Adiitional commands to include newly added lef to openlane flow
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+# Command to set new value for SYNTH_SIZING
+set ::env(SYNTH_SIZING) 1
+
+# Command to set new value for SYNTH_MAX_FANOUT
+set ::env(SYNTH_MAX_FANOUT) 4
+
+# Command to display current value of variable SYNTH_DRIVING_CELL to check whether it's the proper cell or not
+echo $::env(SYNTH_DRIVING_CELL)
+
+# Now that the design is prepped and ready, we can run synthesis using following command
+run_synthesis
+```
+
+<div align="center">
+  <img src="assets/xthirtyfive.png" alt="Screenshot">
+</div>
+<br />
+
+Commands to run STA in another terminal
+
+```bash
+# Change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Command to invoke OpenSTA tool with script
+sta pre_sta.conf
+```
+<div align="center">
+  <img src="assets/xthirtysix.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xthirtyseven.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xthirtyeight.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xthirtynine.png" alt="Screenshot">
 </div>
 <br />

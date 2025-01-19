@@ -2296,11 +2296,11 @@ Height\ of\ standard\ cell = 2.72\ um = 0.34 * 8
 
 How to define a port? (Already done in the s/w)
 
-<br />
 <div align="center">
   <img src="assets/ninetytwo.png" alt="Screenshot">
 </div>
 <br />
+
 For more information check https://github.com/nickson-jose/vsdstdcelldesign
 
 <br />
@@ -2346,7 +2346,6 @@ less sky130_vsdinv.lef
 <div align="center">
   <img src="assets/ninetyfive.png" alt="Screenshot">
 </div>
-<br />
 
 <br />
 <div align="center">
@@ -2356,13 +2355,10 @@ less sky130_vsdinv.lef
 
 Screenshot of newly created lef file
 
-<br />
 <div align="center">
   <img src="assets/ninetyseven.png" alt="Screenshot">
 </div>
-<br />
 
-<br />
 <div align="center">
   <img src="assets/ninetyeight.png" alt="Screenshot">
 </div>

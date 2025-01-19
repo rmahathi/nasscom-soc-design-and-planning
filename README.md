@@ -2237,7 +2237,7 @@ Information regarding the pitch can be found in the sky130_fd_sc_hd file located
 </div>
 <br />
 
-Commands for tkcon window to set grid as tracks of local layer
+Commands for tkcon window to set grid as tracks of locali layer
 
 ```tcl
 # Get syntax for grid command
@@ -2289,6 +2289,8 @@ Vertical\ track\ pitch = 0.34\ um
 ```math
 Height\ of\ standard\ cell = 2.72\ um = 0.34 * 8
 ```
+
+### Save the finalized layout with custom name and open it
 
 
 </details>

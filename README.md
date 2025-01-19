@@ -2503,7 +2503,7 @@ run_synthesis
 <details>
 <summary> 
 
-## DAY 4 LAB - XYZ
+## DAY 4 LAB - Timing modelling using delay tables continued
 </summary>
 
 ### Remove/reduce the newly introduced violations with the introduction of custom inverter cell by modifying design parameters

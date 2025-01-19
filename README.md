@@ -2870,3 +2870,23 @@ set_load $cap_load [all_outputs]
   <img src="assets/xtwentyseven.png" alt="Screenshot">
 </div>
 <br />
+
+Commands to run STA in another terminal
+
+```bash
+# Change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Command to invoke OpenSTA tool with script
+sta pre_sta.conf
+```
+
+<div align="center">
+  <img src="assets/xtwentyeight.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xtwentynine.png" alt="Screenshot">
+</div>
+<br />

@@ -2552,8 +2552,80 @@ echo $::env(SYNTH_DRIVING_CELL)
 run_synthesis
 ```
 
-Screenshot of merged.lef in `tmp` directory with our custom inverter as macro
+<div align="center">
+  <img src="assets/xwight.png" alt="Screenshot">
+</div>
+<br />
 
+<div align="center">
+  <img src="assets/xnine.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xten.png" alt="Screenshot">
+</div>
+<br />
+
+Noting down changed design values generated after modifying parameters, area has increased and worst negative slack has become 0
+
+<div align="center">
+  <img src="assets/xeleven.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xtwelve.png" alt="Screenshot">
+</div>
+<br />
+
+### Once synthesis has accepted our custom inverter we can now run floorplan and placement and verify the cell is accepted in PnR flow
+
+Now that our custom inverter is properly accepted in synthesis we can now run floorplan using following command
+
+```tcl
+# Now we can run floorplan
+init_floorplan
+place_io
+tap_decap_or
+run_floorplan
+```
+
+<div align="center">
+  <img src="assets/xthirteen.png" alt="Screenshot">
+</div>
+<br />
+
+Now that floorplan is done we can do placement using following command
+
+```tcl
+# Now we are ready to run placement
+run_placement
+```
+
+Commands to load placement def in magic in another terminal
+
+```bash
+# Change directory to path containing generated placement def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/24-03_10-03/results/placement/
+
+# Command to load the placement def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
+
+Screenshot of placement def in magic
+
+
+Screenshot of custom inverter inserted in placement def with proper abutment
+
+Command for tkcon window to view internal layers of cells
+
+```tcl
+# Command to view internal connectivity layers
+expand
+```
+
+Abutment of power pins with other cell from library clearly visible
 
 </details>
 

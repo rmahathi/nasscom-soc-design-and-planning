@@ -3551,6 +3551,7 @@ Screenshots of power distribution network run
 <div align="center">
   <img src="assets/xseventyseven.png" alt="Screenshot">
 </div>
+<br />
 
 Commands to load PDN def in magic in another terminal
 
@@ -3564,7 +3565,20 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 Screenshots of PDN def
 
-SS 
+<div align="center">
+  <img src="assets/xseventyeight.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xseventynine.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xeighty.png" alt="Screenshot">
+</div>
+<br />
 
 ### Perfrom detailed routing using TritonRoute and explore the routed layout
 
@@ -3583,7 +3597,20 @@ run_routing
 
 Screenshots of routing run
  
-SS
+<div align="center">
+  <img src="assets/xeightyone.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xeightytwo.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xeightythree.png" alt="Screenshot">
+</div>
+<br />
 
 Commands to load routed def in magic in another terminal
 
@@ -3597,11 +3624,32 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 Screenshots of routed def
 
-SS 
+<div align="center">
+  <img src="assets/xeightyfour.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xeightyfive.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xeightysix.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xeightyseven.png" alt="Screenshot">
+</div>
+<br />
 
 Screenshot of fast route guide present in `openlane/designs/picorv32a/runs/19-01_22-07/tmp/routing` directory
 
-SS 
+<div align="center">
+  <img src="assets/xeightyeight.png" alt="Screenshot">
+</div>
+<br />
 
 ### Post-Route parasitic extraction using SPEF extractor
 
@@ -3662,7 +3710,14 @@ exit
 
 Screenshots of commands run and timing report generated
 
-SS
+<div align="center">
+  <img src="assets/xeightynine.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xninety.png" alt="Screenshot">
+</div>
 
 </details>
 

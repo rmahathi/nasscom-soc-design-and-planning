@@ -2552,8 +2552,22 @@ echo $::env(SYNTH_DRIVING_CELL)
 run_synthesis
 ```
 
+Screenshot of merged.lef in tmp directory with our custom inverter as macro
+
 <div align="center">
-  <img src="assets/xwight.png" alt="Screenshot">
+  <img src="assets/xthirteen.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xfourteen.png" alt="Screenshot">
+</div>
+<br />
+
+Commands run
+
+<div align="center">
+  <img src="assets/xeight.png" alt="Screenshot">
 </div>
 <br />
 
@@ -2592,7 +2606,7 @@ run_floorplan
 ```
 
 <div align="center">
-  <img src="assets/xthirteen.png" alt="Screenshot">
+  <img src="assets/xfifteen.png" alt="Screenshot">
 </div>
 <br />
 

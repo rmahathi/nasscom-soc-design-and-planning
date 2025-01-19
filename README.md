@@ -2215,6 +2215,16 @@ Pre-requisites to creating a LEF file. Make sure you have these specifications m
 - Condition 2: Width of the standard cell should be odd multiples of the horizontal track pitch.
 - Condition 3: Height of the standard cell should be even multiples of the vertical track pitch.
 
+Commands to open the custom inverter layout
+
+```bash
+# Change directory to vsdstdcelldesign
+cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+
+# Command to open custom inverter layout in magic
+magic -T sky130A.tech sky130_inv.mag &
+```
+
 Information regarding the pitch can be found in the sky130_fd_sc_hd file located deep in the pdks directory in a file called tracks.info.
 
 <div align="center">
@@ -2227,15 +2237,22 @@ Information regarding the pitch can be found in the sky130_fd_sc_hd file located
 </div>
 <br />
 
-Commands to open the custom inverter layout
+Commands for tkcon window to set grid as tracks of local layer
 
-```bash
-# Change directory to vsdstdcelldesign
-cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+```tcl
+# Get syntax for grid command
+help grid
 
-# Command to open custom inverter layout in magic
-magic -T sky130A.tech sky130_inv.mag &
+# Set grid values accordingly
+grid 0.46um 0.34um 0.23um 0.17um
 ```
+
+<div align="center">
+  <img src="assets/eightyeight.png" alt="Screenshot">
+</div>
+<br />
+
+Screenshot of commands run
 
 
 </details>

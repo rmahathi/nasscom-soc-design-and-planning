@@ -2466,6 +2466,36 @@ run_synthesis
 </div>
 <br />
 
+</details>
+
+---
+
+<details>
+<summary> 
+
+## Delay tables
+</summary>
+
+<div align="center">
+  <img src="assets/del1.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/del2.png" alt="Screenshot">
+</div>
+<br />
+
+</details>
+
+---
+
+<details>
+<summary> 
+
+## DAY 4 LAB - XYZ
+</summary>
+
 ### Remove/reduce the newly introduced violations with the introduction of custom inverter cell by modifying design parameters
 
 Noting down current design values generated before modifying parameters to improve timing

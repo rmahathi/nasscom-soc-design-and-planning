@@ -3355,10 +3355,6 @@ Screenshots of commands run and timing report generated
 </div>
 <br />
 
-<div align="center">
-  <img src="assets/xseventy.png" alt="Screenshot">
-</div>
-<br />
 
 ### Explore post-CTS OpenROAD timing analysis by removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'
 
@@ -3390,7 +3386,7 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 openroad
 
 # Reading lef file
-read_lef /openLANE_flow/designs/picorv32a/runs/19-01_13-50tmp/merged.lef
+read_lef /openLANE_flow/designs/picorv32a/runs/19-01_13-50/tmp/merged.lef
 
 # Reading def file
 read_def /openLANE_flow/designs/picorv32a/runs/19-01_13-50/results/cts/picorv32a.cts.def
@@ -3441,6 +3437,11 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 Screenshots of commands run and timing report generated
 
 <div align="center">
+  <img src="assets/xseventy.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
   <img src="assets/xseventyone.png" alt="Screenshot">
 </div>
 <br />
@@ -3457,6 +3458,11 @@ Screenshots of commands run and timing report generated
 
 <div align="center">
   <img src="assets/xseventyfour.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xseventyfive.png" alt="Screenshot">
 </div>
 <br />
 

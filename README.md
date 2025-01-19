@@ -2381,6 +2381,40 @@ cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/de
 # List and check whether it's copied
 ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
 ```
+<div align="center">
+  <img src="assets/ninetynine.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xzero.png" alt="Screenshot">
+</div>
+<br />
+
+### Edit 'config.tcl' to change lib file and add the new extra lef into the openlane flow
+
+Commands to be added to config.tcl to include our custom cell in the openlane flow
+
+```tcl
+set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+
+set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+```
+
+Edited config.tcl to include the added lef and change library to ones we added in src directory
+
+<div align="center">
+  <img src="assets/xone.png" alt="Screenshot">
+</div>
+<br />
+
+<div align="center">
+  <img src="assets/xtwo.png" alt="Screenshot">
+</div>
+<br />
 
 </details>
 

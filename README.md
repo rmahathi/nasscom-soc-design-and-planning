@@ -3578,6 +3578,64 @@ Screenshots of commands run and timing report generated
 ##  Routing and design rule check (DRC)
 </summary>
 
+<br />
+<div align="center">
+  <img src="assets/routingdrc1.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc2.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc3.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc4.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc5.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc6.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc7.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc8.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc9.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc10.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc11.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc12.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc13.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/routingdrc14.png" alt="Screenshot">
+</div>
+<br />
+
 </details>
 
 ---

@@ -3153,6 +3153,55 @@ Screenshot of replaced instance
 ## Clock tree synthesis 
 </summary>
 
+<br />
+<div align="center">
+  <img src="assets/ctr1.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr2.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr3.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr4.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr5.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr6.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr7.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr8.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr9.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr10.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr11.png" alt="Screenshot">
+</div>
+
+<div align="center">
+  <img src="assets/ctr12.png" alt="Screenshot">
+</div>
+<br />
 
 </details>
 

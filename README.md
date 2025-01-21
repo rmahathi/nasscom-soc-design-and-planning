@@ -3892,6 +3892,26 @@ Screenshots of commands run and timing report generated
 ## TritonRoute Features
 </summary>
 
+<b>1. Honors Pre-processed Route Guides:</b>  
+TritonRoute ensures compliance with pre-processed route guides generated during global routing. These guides direct the router to follow specified paths, minimizing design rule violations and optimizing resource usage. By adhering to these guides, TritonRoute enhances routing efficiency and reduces the need for iterative adjustments.
+
+<b>2. Inter-guide Connectivity and Intra- & Inter-layer Routing:</b>  
+TritonRoute features robust inter-guide connectivity, ensuring smooth transitions between route guides while maintaining design rule compliance. Additionally, it performs intra- and inter-layer routing, facilitating connections across different metal layers using vias. This capability helps optimize routing density, reduce congestion, and maintain signal integrity.
+
+<b>3. Methods to Handle Connectivity:</b>  
+To ensure accurate and complete net connections, TritonRoute employs advanced methodologies:  
+- **Maze Routing:** Determines the shortest path between endpoints while avoiding obstacles and adhering to design rules.  
+- **Design Rule Checking (DRC):** Continuous validation ensures that no violations occur during routing.  
+- **Conflict Resolution:** Handles overlapping nets and other conflicts by isolating and aligning routed paths correctly.
+
+<b>4. Routing Topology Algorithm:</b>  
+TritonRoute utilizes sophisticated algorithms to determine optimal routing topology:  
+- **Net Splitting:** Decomposes large nets into smaller subnetworks for simplified routing.  
+- **Tree-based Routing:** Leverages minimum spanning tree (MST) or Steiner tree approaches to minimize wire length and signal delay.  
+- **Optimization Heuristics:** Improves routing configurations based on metrics like wirelength, via count, and timing performance.
+
+<b>Additional Resources:</b>  
+For more details, refer to the <a href="https://github.com/The-OpenROAD-Project/TritonRoute" target="_blank">TritonRoute Documentation</a>.  
 
 </details>
 

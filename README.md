@@ -3814,18 +3814,6 @@ Screenshot of fast route guide present in `openlane/designs/picorv32a/runs/19-01
 </div>
 <br />
 
-### Post-Route parasitic extraction using SPEF extractor
-
-Commands for SPEF extraction using external tool
-
-```bash
-# Change directory
-cd Desktop/work/tools/SPEF_EXTRACTOR
-
-# Command extract spef
-python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/19-01_22-07/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/19-01_22-07/results/routing/picorv32a.def
-```
-
 ### Post-Route OpenSTA timing analysis with the extracted parasitics of the route
 
 Commands to be run in OpenLANE flow to do OpenROAD timing analysis with integrated OpenSTA in OpenROAD

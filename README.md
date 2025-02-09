@@ -3924,6 +3924,9 @@ An open-source VLSI layout editor that supports custom cell design, floorplannin
 A powerful open-source tool used to analyze and verify the timing performance of digital circuits. It ensures that the design meets setup and hold time constraints.
 
 # Certificate of Completion
+![image](https://github.com/user-attachments/assets/0d1bb4b9-15a0-45fb-81ea-c7064b850e66)
+
+[9_VSD_nasscom Workshop Certificate 2025GitHub Repo.pdf](https://github.com/user-attachments/files/18723521/9_VSD_nasscom.Workshop.Certificate.2025GitHub.Repo.pdf)
 
 
 # Acknowledgements
